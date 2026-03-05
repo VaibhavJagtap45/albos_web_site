@@ -1,0 +1,277 @@
+// import { Link, NavLink } from "react-router-dom";
+// import logo from "../assets/albos.png";
+// const SERVICES = [
+//   "Web Development", "Mobile Apps", "Blockchain & Web3",
+//   "IoT & Embedded", "API Engineering", "Digital Marketing", "Game Development",
+// ];
+// const COMPANY  = ["About Us", "Portfolio", "Careers", "Blog", "Case Studies"];
+// const LEGAL    = ["Privacy Policy", "Terms of Service", "Refund Policy", "NDA Template"];
+
+// export default function Footer() {
+//   return (
+//     <footer className="bg-white border-t border-slate-200 pt-14 pb-8 px-[5%] relative z-10">
+//       {/* Gold accent line */}
+//       <div className="absolute top-0 left-[5%] w-64 h-px bg-gradient-to-r from-amber-400 to-transparent opacity-60" />
+
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+//         {/* Brand */}
+//         <div>
+//           {/* <Link to="/" className="font-display font-black text-xl tracking-tight text-slate-900 inline-block mb-3">
+//             Albos<span className="text-amber-500">.</span>Technologies
+//           </Link> */}
+//           <Link to="/" className="flex items-center gap-2">
+//             <img
+//               src={logo}
+//               alt="Albos Technologies"
+//               className="h-10 w-auto object-contain"
+//             />
+//           </Link>
+//           <p className="text-slate-400 text-xs leading-relaxed max-w-[240px] mb-5">
+//             Full-stack software engineering studio based in Pune, India. Building enterprise-grade digital
+//             products since 2014 for 320+ clients across 18 countries.
+//           </p>
+//           <div className="flex gap-2">
+//             {["in", "𝕏", "⌥", "◎"].map((s) => (
+//               <a
+//                 key={s}
+//                 href="#"
+//                 className="w-8 h-8 bg-slate-50 border border-slate-200 hover:border-slate-300 hover:bg-slate-100 rounded-lg flex items-center justify-center text-slate-500 hover:text-slate-700 text-xs transition-all"
+//               >
+//                 {s}
+//               </a>
+//             ))}
+//           </div>
+//         </div>
+
+//         {/* Services */}
+//         <div>
+//           <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">Services</h5>
+//           {SERVICES.map((l) => (
+//             <Link key={l} to="/services" className="block text-slate-500 hover:text-slate-800 text-xs mb-2 transition-colors">{l}</Link>
+//           ))}
+//         </div>
+
+//         {/* Company */}
+//         <div>
+//           <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">Company</h5>
+//           {COMPANY.map((l) => (
+//             <Link key={l} to="/about" className="block text-slate-500 hover:text-slate-800 text-xs mb-2 transition-colors">{l}</Link>
+//           ))}
+//         </div>
+
+//         {/* Legal & contact */}
+//         <div>
+//           <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">Legal</h5>
+//           {LEGAL.map((l) => (
+//             <a key={l} href="#" className="block text-slate-500 hover:text-slate-800 text-xs mb-2 transition-colors">{l}</a>
+//           ))}
+//           <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 mt-5">Contact</h5>
+//           <a href="tel:+919766650411" className="block text-slate-500 hover:text-slate-800 text-xs mb-2 transition-colors">
+//             +91 97666 50411
+//           </a>
+//           <a href="mailto:info@albostechnologies.com" className="block text-slate-500 hover:text-slate-800 text-xs transition-colors">
+//             info@albostechnologies.com
+//           </a>
+//         </div>
+//       </div>
+
+//       {/* Bottom bar */}
+//       <div className="flex flex-wrap justify-between items-center pt-6 border-t border-slate-100 gap-4">
+//         <span className="text-slate-400 text-xs">
+//           © 2026 Albos Technologies Pvt. Ltd. All rights reserved. · Pune, India
+//         </span>
+//         <div className="flex flex-wrap gap-2">
+//           {[["Est. 2014", true], ["ISO Certified", false], ["4.9★ Clutch", false], ["NASSCOM Member", false]].map(([label, isGold]) => (
+//             <div
+//               key={label}
+//               className={`rounded-full px-3 py-1 text-[10px] font-bold border ${
+//                 isGold
+//                   ? "bg-amber-50 border-amber-200 text-amber-600"
+//                   : "bg-slate-50 border-slate-200 text-slate-500"
+//               }`}
+//             >
+//               {label}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// }
+import { Link } from "react-router-dom";
+import logo from "../assets/albos.png";
+
+/* SERVICES ROUTES */
+const SERVICES = [
+  { name: "Web Development", path: "/services/website-development-services-company" },
+  { name: "Mobile Apps", path: "/services/android-app-development-services" },
+  { name: "Blockchain & Web3", path: "/services/blockchain-development-company" },
+  { name: "IoT & Embedded", path: "/services/iot-application-development-services" },
+  { name: "API Engineering", path: "/services/api-development-services" },
+  { name: "Digital Marketing", path: "/services/socialMedia-marketing" },
+  { name: "Game Development", path: "/services/mobile-game-development-company" },
+];
+
+/* COMPANY ROUTES */
+const COMPANY = [
+  { name: "About Us", path: "/about" },
+  { name: "Portfolio", path: "/portfolio" },
+  { name: "Careers", path: "/careers" },
+  { name: "Blog", path: "/blog" },
+  { name: "Case Studies", path: "/portfolio" },
+];
+
+/* LEGAL LINKS */
+const LEGAL = [
+  "Privacy Policy",
+  "Terms of Service",
+  "Refund Policy",
+  "NDA Template",
+];
+
+export default function Footer() {
+  return (
+    <footer className="bg-white border-t border-slate-200 pt-14 pb-8 px-[5%] relative z-10">
+
+      {/* Gold accent */}
+      <div className="absolute top-0 left-[5%] w-64 h-px bg-gradient-to-r from-amber-400 to-transparent opacity-60" />
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+        {/* Brand */}
+        <div>
+          <Link to="/" className="flex items-center gap-2 mb-3">
+            <img src={logo} alt="Albos Technologies" className="h-10 w-auto object-contain" />
+          </Link>
+
+          <p className="text-slate-400 text-xs leading-relaxed max-w-[240px] mb-5">
+            Full-stack software engineering studio based in Pune, India.
+            Building enterprise-grade digital products for global clients.
+          </p>
+
+          {/* Social */}
+          <div className="flex gap-2">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-50 border border-slate-200 hover:bg-slate-100 text-xs"
+            >
+              in
+            </a>
+
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-50 border border-slate-200 hover:bg-slate-100 text-xs"
+            >
+              X
+            </a>
+
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-50 border border-slate-200 hover:bg-slate-100 text-xs"
+            >
+              IG
+            </a>
+          </div>
+        </div>
+
+        {/* Services */}
+        <div>
+          <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">
+            Services
+          </h5>
+
+          {SERVICES.map((service) => (
+            <Link
+              key={service.name}
+              to={service.path}
+              className="block text-slate-500 hover:text-slate-800 text-xs mb-2 transition-colors"
+            >
+              {service.name}
+            </Link>
+          ))}
+        </div>
+
+        {/* Company */}
+        <div>
+          <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">
+            Company
+          </h5>
+
+          {COMPANY.map((item) => (
+            <Link
+              key={item.name}
+              to={item.path}
+              className="block text-slate-500 hover:text-slate-800 text-xs mb-2 transition-colors"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+
+        {/* Legal + Contact */}
+        <div>
+          <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-4">
+            Legal
+          </h5>
+
+          {LEGAL.map((l) => (
+            <a
+              key={l}
+              href="#"
+              className="block text-slate-500 hover:text-slate-800 text-xs mb-2 transition-colors"
+            >
+              {l}
+            </a>
+          ))}
+
+          <h5 className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-3 mt-5">
+            Contact
+          </h5>
+
+          <a
+            href="tel:+919766650411"
+            className="block text-slate-500 hover:text-slate-800 text-xs mb-2 transition-colors"
+          >
+            +91 97666 50411
+          </a>
+
+          <a
+            href="mailto:info@albostechnologies.com"
+            className="block text-slate-500 hover:text-slate-800 text-xs transition-colors"
+          >
+            info@albostechnologies.com
+          </a>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="flex flex-wrap justify-between items-center pt-6 border-t border-slate-100 gap-4">
+
+        <span className="text-slate-400 text-xs">
+          © {new Date().getFullYear()} Albos Technologies Pvt. Ltd. · Pune, India
+        </span>
+
+        <div className="flex flex-wrap gap-2">
+          {["Est. 2014", "ISO Certified", "4.9★ Clutch", "NASSCOM Member"].map((label, i) => (
+            <div
+              key={label}
+              className={`rounded-full px-3 py-1 text-[10px] font-bold border ${
+                i === 0
+                  ? "bg-amber-50 border-amber-200 text-amber-600"
+                  : "bg-slate-50 border-slate-200 text-slate-500"
+              }`}
+            >
+              {label}
+            </div>
+          ))}
+        </div>
+      </div>
+    </footer>
+  );
+}
