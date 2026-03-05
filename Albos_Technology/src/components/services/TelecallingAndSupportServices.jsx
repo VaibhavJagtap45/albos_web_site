@@ -214,17 +214,12 @@ export default function TelecallingAndSupportServices() {
         @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
         *{box-sizing:border-box;}
         body, div, p, span, li, a, button {
-          font-family: 'Plus Jakarta Sans', sans-serif !important;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
           letter-spacing: 0.01em;
           word-spacing: 0.03em;
         }
-        h1,h2,h3,h4,h5,h6 {
-          font-family: 'Syne', sans-serif !important;
-          letter-spacing: -0.01em;
-        }
-        @keyframes tcFloat   {0%{transform:translateY(0);}100%{transform:translateY(-18px);}}
+                @keyframes tcFloat   {0%{transform:translateY(0);}100%{transform:translateY(-18px);}}
         @keyframes tcMarquee {0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
         @keyframes tcPulse   {0%,100%{opacity:1;}50%{opacity:0.45;}}
         @keyframes tcSpin    {from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
@@ -256,7 +251,7 @@ export default function TelecallingAndSupportServices() {
             </Reveal>
 
             <Reveal delay={0.1}>
-              <h1 style={{ fontSize:"clamp(2rem,3.8vw,3.1rem)", fontWeight:800, fontFamily:"'Syne',sans-serif", lineHeight:1.15, color:"#0f172a", marginBottom:18 }}>
+              {/* <h1 style={{ fontSize:"clamp(2rem,3.8vw,3.1rem)", fontWeight:800,   lineHeight:1.15, color:"#0f172a", marginBottom:18 }}>
                 Enterprise Telecalling &{" "}
                 <span style={{ position:"relative", display:"inline-block" }}>
                   <span style={{ background:"linear-gradient(135deg,#2563eb,#0ea5e9)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>Customer Support</span>
@@ -264,7 +259,27 @@ export default function TelecallingAndSupportServices() {
                     <path d="M2 7 Q110 2 218 7" stroke="#3b82f6" strokeWidth="2.5" fill="none" strokeLinecap="round" />
                   </svg>
                 </span>
-              </h1>
+              </h1> */}
+              <h1 style={{
+  // fontSize:"clamp(2rem,3.8vw,3.1rem)",
+  fontSize:"48px",
+  fontWeight:800,
+  fontFamily:"sans-serif",
+  lineHeight:1.1,
+  // letterSpacing:"-0.02em",
+  color:"#0f172a",
+  marginBottom:18
+}}>
+  Enterprise Telecalling &{" "}
+  <span style={{
+    fontFamily:"sans-serif",
+    background:"linear-gradient(135deg,#2563eb,#0ea5e9)",
+    WebkitBackgroundClip:"text",
+    WebkitTextFillColor:"transparent"
+  }}>
+    Customer Support
+  </span>
+</h1>
             </Reveal>
 
             <Reveal delay={0.18}>
@@ -320,7 +335,7 @@ export default function TelecallingAndSupportServices() {
             <Reveal key={i} delay={i * 0.09}>
               <div className="hov-card" style={{ background:"white", borderRadius:20, padding:"26px 20px", border:"1px solid #e2e8f0", boxShadow:"0 4px 20px rgba(59,130,246,0.07)", textAlign:"center" }}>
                 <div style={{ fontSize:30, marginBottom:6 }}>{s.icon}</div>
-                <div style={{ fontSize:38, fontWeight:800, color:"#1e40af", fontFamily:"'Syne',sans-serif", lineHeight:1 }}>
+                <div style={{ fontSize:38, fontWeight:800, color:"#1e40af",   lineHeight:1 }}>
                   <Counter end={s.val} suffix={s.suf} />
                 </div>
                 <div style={{ fontSize:13, color:"#64748b", marginTop:6, fontWeight:500 }}>{s.label}</div>
@@ -336,7 +351,7 @@ export default function TelecallingAndSupportServices() {
           <Reveal>
             <div style={{ textAlign:"center", maxWidth:680, margin:"0 auto 64px" }}>
               <div style={{ display:"inline-block", background:"#ecfdf5", borderRadius:8, padding:"4px 14px", fontSize:13, fontWeight:700, color:"#059669", letterSpacing:"0.08em", marginBottom:14 }}>SERVICES</div>
-              <h2 style={{ fontSize:"clamp(1.7rem,3.2vw,2.6rem)", fontWeight:800, fontFamily:"'Syne',sans-serif", color:"#0f172a", marginBottom:14 }}>What We Do</h2>
+              <h2 style={{ fontSize:"clamp(1.7rem,3.2vw,2.6rem)", fontWeight:800,   color:"#0f172a", marginBottom:14 }}>What We Do</h2>
               <p style={{ fontSize:16, color:"#475569", lineHeight:1.72 }}>Complete telecalling and customer communication solutions combining trained telecallers with enterprise-grade infrastructure, automation, and performance monitoring.</p>
             </div>
           </Reveal>
@@ -356,7 +371,7 @@ export default function TelecallingAndSupportServices() {
                   </div>
                   <div style={{ padding:"20px 20px 22px" }}>
                     <div style={{ width:46, height:46, borderRadius:13, background:s.bg, display:"flex", alignItems:"center", justifyContent:"center", marginBottom:12, marginTop:-30, position:"relative", zIndex:2, border:"2px solid white", boxShadow:"0 4px 14px rgba(0,0,0,0.1)" }}>{s.icon}</div>
-                    <h3 style={{ fontWeight:700, fontSize:15, fontFamily:"'Syne',sans-serif", color:"#0f172a", marginBottom:7 }}>{s.title}</h3>
+                    <h3 style={{ fontWeight:700, fontSize:15,   color:"#0f172a", marginBottom:7 }}>{s.title}</h3>
                     <p style={{ fontSize:14.5, color:"#64748b", lineHeight:1.75 }}>{s.desc}</p>
                   </div>
                 </div>
@@ -372,7 +387,7 @@ export default function TelecallingAndSupportServices() {
           <Reveal>
             <div style={{ textAlign:"center", maxWidth:700, margin:"0 auto 64px" }}>
               <div style={{ display:"inline-block", background:"#eff6ff", borderRadius:8, padding:"4px 14px", fontSize:13, fontWeight:700, color:"#2563eb", letterSpacing:"0.08em", marginBottom:14 }}>TELECALLING</div>
-              <h2 style={{ fontSize:"clamp(1.7rem,3.2vw,2.6rem)", fontWeight:800, fontFamily:"'Syne',sans-serif", color:"#0f172a", marginBottom:14 }}>Inbound & Outbound Telecalling Services</h2>
+              <h2 style={{ fontSize:"clamp(1.7rem,3.2vw,2.6rem)", fontWeight:800,   color:"#0f172a", marginBottom:14 }}>Inbound & Outbound Telecalling Services</h2>
               <p style={{ fontSize:16, color:"#475569", lineHeight:1.72 }}>Fully managed telecalling services powered by trained agents, proven workflows, and enterprise-grade calling systems — designed to improve CX and drive measurable business outcomes.</p>
             </div>
           </Reveal>
@@ -459,7 +474,7 @@ export default function TelecallingAndSupportServices() {
           <Reveal>
             <div style={{ textAlign:"center", maxWidth:700, margin:"0 auto 64px" }}>
               <div style={{ display:"inline-block", background:"#f5f3ff", borderRadius:8, padding:"4px 14px", fontSize:13, fontWeight:700, color:"#7c3aed", letterSpacing:"0.08em", marginBottom:14 }}>INFRASTRUCTURE</div>
-              <h2 style={{ fontSize:"clamp(1.7rem,3.2vw,2.6rem)", fontWeight:800, fontFamily:"'Syne',sans-serif", color:"#0f172a", marginBottom:14 }}>Calling Technology & Infrastructure</h2>
+              <h2 style={{ fontSize:"clamp(1.7rem,3.2vw,2.6rem)", fontWeight:800,   color:"#0f172a", marginBottom:14 }}>Calling Technology & Infrastructure</h2>
               <p style={{ fontSize:16, color:"#475569", lineHeight:1.72 }}>Enterprise-grade cloud telephony infrastructure — VoIP calling, SIP trunking, IVR workflows, and secure call routing ensuring high availability, call quality, and scalability.</p>
             </div>
           </Reveal>
@@ -496,7 +511,7 @@ export default function TelecallingAndSupportServices() {
                   </div>
                   <div style={{ padding:"20px 22px 24px" }}>
                     <div style={{ width:44, height:44, borderRadius:12, background:c.bg, display:"flex", alignItems:"center", justifyContent:"center", marginBottom:13, marginTop:-26, position:"relative", zIndex:2, border:"2px solid white", boxShadow:"0 4px 14px rgba(0,0,0,0.1)" }}>{c.icon}</div>
-                    <h3 style={{ fontWeight:700, fontSize:15, fontFamily:"'Syne',sans-serif", color:"#0f172a", marginBottom:8 }}>{c.title}</h3>
+                    <h3 style={{ fontWeight:700, fontSize:15,   color:"#0f172a", marginBottom:8 }}>{c.title}</h3>
                     <p style={{ fontSize:14.5, color:"#64748b", lineHeight:1.75, marginBottom:14 }}>{c.desc}</p>
                     <div style={{ display:"flex", flexDirection:"column", gap:7 }}>
                       {c.points.map((p, j) => (
@@ -526,7 +541,7 @@ export default function TelecallingAndSupportServices() {
           <Reveal>
             <div style={{ textAlign:"center", maxWidth:640, margin:"0 auto 64px" }}>
               <div style={{ display:"inline-block", background:"#fef3c7", borderRadius:8, padding:"4px 14px", fontSize:13, fontWeight:700, color:"#d97706", letterSpacing:"0.08em", marginBottom:14 }}>WHY US</div>
-              <h2 style={{ fontSize:"clamp(1.7rem,3.2vw,2.6rem)", fontWeight:800, fontFamily:"'Syne',sans-serif", color:"#0f172a", marginBottom:14 }}>Why Enterprises Trust Us</h2>
+              <h2 style={{ fontSize:"clamp(1.7rem,3.2vw,2.6rem)", fontWeight:800,   color:"#0f172a", marginBottom:14 }}>Why Enterprises Trust Us</h2>
               <p style={{ fontSize:16, color:"#475569", lineHeight:1.72 }}>From day one, we combine the right people, processes, and technology to deliver measurable outcomes for your customer communication operations.</p>
             </div>
           </Reveal>
@@ -557,7 +572,7 @@ export default function TelecallingAndSupportServices() {
           <Reveal>
             <div style={{ borderRadius:28, background:"linear-gradient(135deg,#1e3a8a,#2563eb,#0ea5e9)", padding:"60px 48px", textAlign:"center", boxShadow:"0 24px 80px rgba(37,99,235,0.28)", backgroundSize:"200% 200%", animation:"tcGrad 6s ease infinite" }}>
               <div style={{ fontSize:40, marginBottom:12 }}>🎯</div>
-              <h3 style={{ fontFamily:"'Syne',sans-serif", fontSize:"clamp(1.5rem,2.8vw,2.2rem)", fontWeight:800, color:"white", marginBottom:12 }}>Ready to Scale Your Customer Support?</h3>
+              <h3 style={{   fontSize:"clamp(1.5rem,2.8vw,2.2rem)", fontWeight:800, color:"white", marginBottom:12 }}>Ready to Scale Your Customer Support?</h3>
               <p style={{ color:"rgba(255,255,255,0.85)", maxWidth:560, margin:"0 auto 28px", lineHeight:1.72, fontSize:15 }}>Let's build a high-performance telecalling operation for your business — from setup to scale, we've got you covered.</p>
               <div style={{ display:"flex", flexWrap:"wrap", justifyContent:"center", gap:12 }}>
                 <button style={{ background:"white", color:"#1d4ed8", border:"none", borderRadius:13, padding:"14px 32px", fontWeight:700, fontSize:15, cursor:"pointer", display:"inline-flex", alignItems:"center", gap:8, transition:"all 0.3s" }}
@@ -582,7 +597,7 @@ export default function TelecallingAndSupportServices() {
         <div style={{ maxWidth:1100, margin:"0 auto", position:"relative", zIndex:1 }}>
           <Reveal>
             <div style={{ textAlign:"center", maxWidth:520, margin:"0 auto 48px" }}>
-              <h2 style={{ fontSize:"clamp(1.7rem,3vw,2.4rem)", fontWeight:800, fontFamily:"'Syne',sans-serif", color:"#0f172a", marginBottom:12 }}>Ready to Grow Your Business?</h2>
+              <h2 style={{ fontSize:"clamp(1.7rem,3vw,2.4rem)", fontWeight:800,   color:"#0f172a", marginBottom:12 }}>Ready to Grow Your Business?</h2>
               <p style={{ color:"#475569", fontSize:15.5, lineHeight:1.72 }}>Speak with our experts today. We help brands scale with powerful development, design, automation, and cloud solutions.</p>
             </div>
           </Reveal>
