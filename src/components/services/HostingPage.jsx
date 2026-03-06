@@ -284,7 +284,7 @@ const CSS = `
 *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
 
 .host-root {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family:  sans-serif;
   background: var(--bg);
   color: var(--ink);
   overflow-x: hidden;
@@ -321,7 +321,7 @@ const CSS = `
   position:relative; overflow:hidden;
   background:var(--blue); color:#fff;
   padding:14px 28px; border-radius:10px;
-  font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:.9rem;
+  font-family:sans-serif; font-weight:700; font-size:.9rem;
   border:none; cursor:pointer; text-decoration:none;
   display:inline-flex; align-items:center; gap:8px;
   transition:transform .22s,box-shadow .22s;
@@ -337,7 +337,7 @@ const CSS = `
 .btn-dark {
   background:var(--ink); color:#fff;
   padding:14px 28px; border-radius:10px;
-  font-family:'Plus Jakarta Sans',sans-serif; font-weight:700; font-size:.9rem;
+  font-family:sans-serif; font-weight:700; font-size:.9rem;
   border:none; cursor:pointer; text-decoration:none;
   display:inline-flex; align-items:center; gap:8px;
   transition:transform .22s,background .22s,box-shadow .22s;
@@ -355,7 +355,7 @@ const CSS = `
 
 .d-input {
   flex:1; padding:14px 20px; border-radius:10px;
-  border:1.5px solid var(--line); font-family:'Plus Jakarta Sans',sans-serif;
+  border:1.5px solid var(--line); font-family:sans-serif;
   font-size:.95rem; background:var(--white); color:var(--ink);
   outline:none; transition:border-color .2s,box-shadow .2s;
 }

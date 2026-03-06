@@ -132,7 +132,7 @@ export default function Hero() {
             Trusted Partner Since 2014 · Pune, India
           </p>
 
-          <h1 className="font-black leading-tight mb-6
+          <h1 className="font-black leading-[0.95] mb-6
             text-[2.2rem]
             sm:text-[2.3rem]
             md:text-[2.4rem]

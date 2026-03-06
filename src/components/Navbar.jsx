@@ -68,7 +68,7 @@
 //     alignItems: "center",
 //     gap: "10px",
 //     textDecoration: "none",
-//     fontFamily: "'Clash Display', 'Syne', sans-serif",
+//     fontFamily: "'Clash Display',   sans-serif",
 //     fontWeight: 700,
 //     fontSize: "20px",
 //     letterSpacing: "-0.5px",
@@ -442,7 +442,7 @@
 //         {/* Header */}
 //         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "20px" }}>
 //           <div>
-//             <div style={{ fontSize: "18px", fontWeight: 700, color: "#0F172A", fontFamily: "'Syne', sans-serif", marginBottom: "4px" }}>
+//             <div style={{ fontSize: "18px", fontWeight: 700, color: "#0F172A", fontFamily: "  sans-serif", marginBottom: "4px" }}>
 //               Our Services
 //             </div>
 //             <div style={{ fontSize: "12.5px", color: "#94A3B8" }}>
