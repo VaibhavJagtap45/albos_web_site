@@ -22,15 +22,10 @@ const FontLink = () => (
       --border: #e2e8f0; --green: #16a34a; --purple: #7c3aed; --orange: #ea580c;
     }
     body { font-family: 'DM Sans', sans-serif; background: #fff; color: var(--ink); }
-    h1,h2,h3,h4,h5 { font-family: 'Syne', sans-serif; }
+    h1,h2,h3,h4,h5 { font-family:  sans-serif; }
 
 
-    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s cubic-bezier(.22,1,.36,1), transform 0.7s cubic-bezier(.22,1,.36,1); }
-    .reveal.visible { opacity: 1; transform: none; }
-    .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.7s cubic-bezier(.22,1,.36,1), transform 0.7s cubic-bezier(.22,1,.36,1); }
-    .reveal-left.visible { opacity: 1; transform: none; }
-    .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.7s cubic-bezier(.22,1,.36,1), transform 0.7s cubic-bezier(.22,1,.36,1); }
-    .reveal-right.visible { opacity: 1; transform: none; }
+  
 
     .d1{transition-delay:.05s}.d2{transition-delay:.15s}.d3{transition-delay:.25s}.d4{transition-delay:.35s}.d5{transition-delay:.45s}.d6{transition-delay:.55s}
 

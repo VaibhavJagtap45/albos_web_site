@@ -130,7 +130,7 @@ function HeroVisual() {
         <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", borderBottom:"1px solid #f1f5f9" }}>
           {metrics.map((m, i) => (
             <div key={i} style={{ padding:"14px 12px", borderRight:i<2?"1px solid #f1f5f9":"none", textAlign:"center" }}>
-              <div style={{ fontSize:16, fontWeight:800, color:m.color, fontFamily:"'Syne',sans-serif" }}>{m.val}</div>
+              <div style={{ fontSize:16, fontWeight:800, color:m.color, fontFamily:" sans-serif" }}>{m.val}</div>
               <div style={{ fontSize:10, color:"#94a3b8", fontWeight:500 }}>{m.label}</div>
               <div style={{ fontSize:10, fontWeight:700, color:"#10b981", marginTop:2 }}>↑ {m.delta}</div>
             </div>
@@ -219,7 +219,7 @@ function FAQItem({ q, a, delay }) {
 /* ══════════════ MAIN ══════════════ */
 export default function SocialMediaMarketing() {
   return (
-    <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", background:"#fff", color:"#1e293b", overflowX:"hidden" }}>
+    <div style={{ fontFamily:" sans-serif", background:"#fff", color:"#1e293b", overflowX:"hidden" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
         *{box-sizing:border-box;}
@@ -344,7 +344,7 @@ export default function SocialMediaMarketing() {
                   <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=700&q=80" alt="Challenges" style={{ width:"100%", height:"100%", objectFit:"cover" }} />
                   <div style={{ position:"absolute", inset:0, background:"linear-gradient(to top,rgba(220,38,38,0.6),transparent 60%)" }} />
                   <div style={{ position:"absolute", bottom:16, left:20 }}>
-                    <div style={{ fontSize:16, fontWeight:800, color:"white", fontFamily:"'Syne',sans-serif" }}>Common Challenges</div>
+                    <div style={{ fontSize:16, fontWeight:800, color:"white", fontFamily:" sans-serif" }}>Common Challenges</div>
                   </div>
                 </div>
                 <div style={{ padding:"24px 26px", background:"white" }}>
@@ -374,7 +374,7 @@ export default function SocialMediaMarketing() {
                   <img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=700&q=80" alt="Opportunity" style={{ width:"100%", height:"100%", objectFit:"cover" }} />
                   <div style={{ position:"absolute", inset:0, background:"linear-gradient(to top,rgba(5,150,105,0.6),transparent 60%)" }} />
                   <div style={{ position:"absolute", bottom:16, left:20 }}>
-                    <div style={{ fontSize:16, fontWeight:800, color:"white", fontFamily:"'Syne',sans-serif" }}>Performance-Driven Strategy</div>
+                    <div style={{ fontSize:16, fontWeight:800, color:"white", fontFamily:" sans-serif" }}>Performance-Driven Strategy</div>
                   </div>
                 </div>
                 <div style={{ padding:"24px 26px", background:"white" }}>
@@ -542,7 +542,7 @@ export default function SocialMediaMarketing() {
               <Reveal key={i} delay={i*.07}>
                 <div className="sm-card" style={{ background:f.bg, borderRadius:18, padding:"22px 18px", border:"1px solid rgba(0,0,0,0.05)" }}>
                   <div style={{ fontSize:28, marginBottom:12 }}>{f.icon}</div>
-                  <div style={{ fontWeight:700, fontSize:14.5, color:"#0f172a", marginBottom:6, fontFamily:"'Syne',sans-serif" }}>{f.title}</div>
+                  <div style={{ fontWeight:700, fontSize:14.5, color:"#0f172a", marginBottom:6, fontFamily:" sans-serif" }}>{f.title}</div>
                   <div style={{ fontSize:13, color:"#64748b", lineHeight:1.68 }}>{f.desc}</div>
                 </div>
               </Reveal>
@@ -646,7 +646,7 @@ export default function SocialMediaMarketing() {
               <Reveal key={i} delay={i*.08}>
                 <div className="sm-card" style={{ background:"white", borderRadius:18, padding:"22px 18px", textAlign:"center", border:"1px solid rgba(255,255,255,0.9)", boxShadow:"0 4px 16px rgba(0,0,0,0.07)" }}>
                   <div style={{ width:44, height:44, borderRadius:13, background:"#eef2ff", display:"flex", alignItems:"center", justifyContent:"center", margin:"0 auto 10px" }}>{c.icon}</div>
-                  <div style={{ fontWeight:700, fontSize:14, color:"#0f172a", marginBottom:5, fontFamily:"'Syne',sans-serif" }}>{c.title}</div>
+                  <div style={{ fontWeight:700, fontSize:14, color:"#0f172a", marginBottom:5, fontFamily:" sans-serif" }}>{c.title}</div>
                   <div style={{ fontSize:13, color:"#64748b", lineHeight:1.5 }}>{c.val}</div>
                 </div>
               </Reveal>

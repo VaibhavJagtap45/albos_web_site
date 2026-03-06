@@ -129,7 +129,7 @@
 //   const [menuOpen, setMenuOpen] = useState(false);
 
 //   return (
-//     <div className="antialiased" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", background: "#030712", color: "#f1f5f9" }}>
+//     <div className="antialiased" style={{ fontFamily: "  sans-serif", background: "#030712", color: "#f1f5f9" }}>
 //       <style>{`
 //         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Clash+Display:wght@600;700&display=swap');
 
@@ -147,7 +147,7 @@
 //         @keyframes dot-blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
 //         @keyframes slide-up { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:none} }
 
-//         .font-display { font-family: 'Clash Display', 'Plus Jakarta Sans', sans-serif; }
+//         .font-display { font-family: 'Clash Display',   sans-serif; }
 //         .green-glow { text-shadow: 0 0 30px rgba(34,197,94,0.4); }
 //         .gradient-green {
 //           background: linear-gradient(135deg, #22c55e, #06b6d4, #22c55e);
@@ -819,7 +819,7 @@ export default function AppDevelopment() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="antialiased text-slate-900 bg-white" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+    <div className="antialiased text-slate-900 bg-white" style={{ fontFamily: "  sans-serif" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,700&display=swap');
 

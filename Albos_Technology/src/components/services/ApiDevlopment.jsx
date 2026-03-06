@@ -118,7 +118,7 @@ export default function ApiDevelopment() {
   }, []);
 
   return (
-    <main className="text-slate-900 bg-white overflow-x-hidden" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+    <main className="text-slate-900 bg-white overflow-x-hidden" style={{ fontFamily: "sans-serif" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Sora:wght@600;700;800&display=swap');
 

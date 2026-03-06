@@ -139,7 +139,7 @@ function HeroVisual() {
             { label:"CSAT Score", val:"96.4%", color:"#8b5cf6" },
           ].map((m, i) => (
             <div key={i} style={{ padding:"14px 16px", borderRight:i<2?"1px solid #f1f5f9":"none", textAlign:"center" }}>
-              <div style={{ fontSize:17, fontWeight:800, color:m.color, fontFamily:"'Syne',sans-serif" }}>{m.val}</div>
+              <div style={{ fontSize:17, fontWeight:800, color:m.color, fontFamily:" sans-serif" }}>{m.val}</div>
               <div style={{ fontSize:12.5, color:"#94a3b8", fontWeight:500 }}>{m.label}</div>
             </div>
           ))}
@@ -209,7 +209,7 @@ function HeroVisual() {
 ══════════════════════════════════════════ */
 export default function TelecallingAndSupportServices() {
   return (
-    <div style={{ fontFamily:"'Plus Jakarta Sans',sans-serif", background:"#fff", color:"#1e293b", overflowX:"hidden" }}>
+    <div style={{ fontFamily:" sans-serif", background:"#fff", color:"#1e293b", overflowX:"hidden" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
         *{box-sizing:border-box;}
@@ -404,7 +404,7 @@ export default function TelecallingAndSupportServices() {
                       <PhoneIncoming size={20} color="white" />
                     </div>
                     <div>
-                      <div style={{ fontSize:16, fontWeight:800, color:"white", fontFamily:"'Syne',sans-serif" }}>Inbound Telecalling</div>
+                      <div style={{ fontSize:16, fontWeight:800, color:"white", fontFamily:" sans-serif" }}>Inbound Telecalling</div>
                       <LiveCallBadge label="Support Active" color="#10b981" />
                     </div>
                   </div>
@@ -437,7 +437,7 @@ export default function TelecallingAndSupportServices() {
                       <PhoneOutgoing size={20} color="white" />
                     </div>
                     <div>
-                      <div style={{ fontSize:16, fontWeight:800, color:"white", fontFamily:"'Syne',sans-serif" }}>Outbound Telecalling</div>
+                      <div style={{ fontSize:16, fontWeight:800, color:"white", fontFamily:" sans-serif" }}>Outbound Telecalling</div>
                       <LiveCallBadge label="Campaigns Running" color="#f59e0b" />
                     </div>
                   </div>
@@ -557,7 +557,7 @@ export default function TelecallingAndSupportServices() {
               <Reveal key={i} delay={i * 0.07}>
                 <div className="hov-card" style={{ background:f.bg, borderRadius:18, padding:"22px 18px", border:"1px solid rgba(0,0,0,0.05)" }}>
                   <div style={{ width:42, height:42, borderRadius:12, background:"white", display:"flex", alignItems:"center", justifyContent:"center", marginBottom:12, boxShadow:"0 2px 10px rgba(0,0,0,0.07)" }}>{f.icon}</div>
-                  <div style={{ fontWeight:700, fontSize:14, color:"#0f172a", marginBottom:5, fontFamily:"'Syne',sans-serif" }}>{f.title}</div>
+                  <div style={{ fontWeight:700, fontSize:14, color:"#0f172a", marginBottom:5, fontFamily:" sans-serif" }}>{f.title}</div>
                   <div style={{ fontSize:14.5, color:"#64748b", lineHeight:1.72 }}>{f.desc}</div>
                 </div>
               </Reveal>
@@ -625,7 +625,7 @@ export default function TelecallingAndSupportServices() {
               <Reveal key={i} delay={i * 0.08}>
                 <div className="hov-card" style={{ background:"white", borderRadius:18, padding:"24px 20px", textAlign:"center", border:"1px solid rgba(255,255,255,0.9)", boxShadow:"0 4px 18px rgba(0,0,0,0.07)" }}>
                   <div style={{ width:46, height:46, borderRadius:13, background:"#eff6ff", display:"flex", alignItems:"center", justifyContent:"center", margin:"0 auto 12px" }}>{c.icon}</div>
-                  <div style={{ fontWeight:700, fontSize:14, color:"#0f172a", marginBottom:5, fontFamily:"'Syne',sans-serif" }}>{c.title}</div>
+                  <div style={{ fontWeight:700, fontSize:14, color:"#0f172a", marginBottom:5, fontFamily:" sans-serif" }}>{c.title}</div>
                   <div style={{ fontSize:14.5, color:"#64748b", lineHeight:1.68 }}>{c.value}</div>
                 </div>
               </Reveal>

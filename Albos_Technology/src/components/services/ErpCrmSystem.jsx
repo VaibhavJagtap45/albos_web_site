@@ -1,153 +1,3 @@
-//  // src/pages/services/ErpCrm.jsx
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-// export default function ErpCrm() {
-//   return (
-//     <main className="min-h-screen bg-white py-20 px-6">
-//       <div className="max-w-5xl mx-auto">
-//         <Link to="/services" className="text-sm text-blue-600 hover:underline mb-6 inline-block">
-//           ← Back to Services
-//         </Link>
-
-//         {/* Hero */}
-//         <header className="mb-10">
-//           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900">
-//             ERP &amp; CRM Systems
-//           </h1>
-//           <p className="text-slate-600 mt-4 max-w-3xl">
-//             Custom enterprise platforms, workflow automation, role-based dashboards and CRM flows tailored to your business
-//             processes. We build systems that reduce manual work, improve visibility, and scale with your organization.
-//           </p>
-//           <div className="mt-6 flex flex-wrap gap-3">
-//             <span className="inline-block bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">Enterprise</span>
-//             <span className="inline-block bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-medium">Automation</span>
-//             <span className="inline-block bg-slate-50 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">SaaS & On-prem</span>
-//           </div>
-//         </header>
-
-//         {/* Two-column overview */}
-//         <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-//           <div className="rounded-xl p-6 border bg-stone-50">
-//             <h2 className="text-xl font-semibold mb-3">What we deliver</h2>
-//             <ul className="list-disc pl-5 space-y-2 text-slate-700">
-//               <li>End-to-end ERP modules: Inventory, Sales, Purchases, Finance, HR</li>
-//               <li>Custom CRM flows: lead capture, scoring, pipeline management, analytics</li>
-//               <li>Role-based dashboards & permissioning</li>
-//               <li>Integrations: payment gateways, accounting, shipping, 3rd-party APIs</li>
-//             </ul>
-//           </div>
-
-//           <div className="rounded-xl p-6 border">
-//             <h2 className="text-xl font-semibold mb-3">Engagement models</h2>
-//             <div className="space-y-3 text-slate-700">
-//               <p className="text-sm">
-//                 Choose a delivery model that fits you — fixed-scope MVP, iterative product development, or a dedicated
-//                 team for long-term product evolution.
-//               </p>
-
-//               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-//                 <div className="p-3 bg-white rounded-lg shadow-sm text-center">
-//                   <div className="text-sm font-medium">MVP</div>
-//                   <div className="text-xs text-slate-500">4–8 weeks</div>
-//                 </div>
-//                 <div className="p-3 bg-white rounded-lg shadow-sm text-center">
-//                   <div className="text-sm font-medium">Product</div>
-//                   <div className="text-xs text-slate-500">3–6 months</div>
-//                 </div>
-//                 <div className="p-3 bg-white rounded-lg shadow-sm text-center">
-//                   <div className="text-sm font-medium">Dedicated Team</div>
-//                   <div className="text-xs text-slate-500">Ongoing</div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </section>
-
-//         {/* Features grid */}
-//         <section className="mb-12">
-//           <h3 className="text-2xl font-semibold mb-6">Key Features</h3>
-//           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-//             <article className="p-5 border rounded-lg bg-white shadow-sm">
-//               <h4 className="font-semibold mb-2">Inventory &amp; Warehouse</h4>
-//               <p className="text-sm text-slate-600">Stock control, multi-warehouse, batch &amp; lot tracking, reorder automation.</p>
-//             </article>
-
-//             <article className="p-5 border rounded-lg bg-white shadow-sm">
-//               <h4 className="font-semibold mb-2">Sales &amp; Orders</h4>
-//               <p className="text-sm text-slate-600">Quotes, orders, invoicing, recurring billing and multi-currency support.</p>
-//             </article>
-
-//             <article className="p-5 border rounded-lg bg-white shadow-sm">
-//               <h4 className="font-semibold mb-2">Finance &amp; Accounting</h4>
-//               <p className="text-sm text-slate-600">Ledger, AR/AP workflows, automated reconciliation and export to accounting tools.</p>
-//             </article>
-
-//             <article className="p-5 border rounded-lg bg-white shadow-sm">
-//               <h4 className="font-semibold mb-2">CRM &amp; Sales Pipeline</h4>
-//               <p className="text-sm text-slate-600">Lead capture, assignment, scoring, activity timeline and email integrations.</p>
-//             </article>
-
-//             <article className="p-5 border rounded-lg bg-white shadow-sm">
-//               <h4 className="font-semibold mb-2">Reports &amp; Analytics</h4>
-//               <p className="text-sm text-slate-600">Custom dashboards, KPI tracking, CSV/Excel exports and scheduled reports.</p>
-//             </article>
-
-//             <article className="p-5 border rounded-lg bg-white shadow-sm">
-//               <h4 className="font-semibold mb-2">Automation &amp; Workflows</h4>
-//               <p className="text-sm text-slate-600">Rule-based triggers, approvals, webhooks, and background jobs for heavy processing.</p>
-//             </article>
-//           </div>
-//         </section>
-
-//         {/* Tech and integrations */}
-//         <section className="mb-12">
-//           <h3 className="text-2xl font-semibold mb-4">Tech stack & integrations (example)</h3>
-//           <div className="flex flex-wrap gap-3">
-//             <span className="px-3 py-1 rounded-full bg-slate-50 border text-sm">React</span>
-//             <span className="px-3 py-1 rounded-full bg-slate-50 border text-sm">Node.js / NestJS</span>
-//             <span className="px-3 py-1 rounded-full bg-slate-50 border text-sm">Postgres</span>
-//             <span className="px-3 py-1 rounded-full bg-slate-50 border text-sm">Redis</span>
-//             <span className="px-3 py-1 rounded-full bg-slate-50 border text-sm">Stripe / Razorpay</span>
-//             <span className="px-3 py-1 rounded-full bg-slate-50 border text-sm">Zapier / Webhooks</span>
-//           </div>
-//         </section>
-
-//         {/* Use cases */}
-//         <section className="mb-12">
-//           <h3 className="text-2xl font-semibold mb-4">Who benefits</h3>
-//           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-slate-700">
-//             <div className="p-4 bg-white border rounded-lg">Manufacturing & Distribution</div>
-//             <div className="p-4 bg-white border rounded-lg">Retail & eCommerce</div>
-//             <div className="p-4 bg-white border rounded-lg">Service Providers & Field Ops</div>
-//           </div>
-//         </section>
-
-//         {/* CTA */}
-//         <section className="mt-8 border-t pt-8">
-//           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-//             <div>
-//               <h4 className="text-lg font-semibold">Ready to streamline operations?</h4>
-//               <p className="text-sm text-slate-600">Book a quick discovery call and we’ll sketch an ERP/CRM plan for your needs.</p>
-//             </div>
-
-//             <div className="flex gap-3">
-//               <button className="px-6 py-3 rounded-2xl bg-blue-600 text-white font-semibold">Get a Quote</button>
-//               <a href="tel:+919766650411" className="px-6 py-3 rounded-2xl border border-slate-200 inline-flex items-center">
-//                 Call Sales
-//               </a>
-//             </div>
-//           </div>
-//         </section>
-//       </div>
-//     </main>
-//   );
-// }
-
-
-
-
-
 // src/pages/services/ErpCrm.jsx
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
@@ -198,7 +48,7 @@ const STYLES = `
   }
 
   .erp-root {
-    font-family: 'DM Sans', sans-serif;
+    font-family: sans-serif;
     background: var(--paper);
     color: var(--ink);
     overflow-x: hidden;
@@ -266,7 +116,7 @@ const STYLES = `
 
   /* number glow */
   .stat-num {
-    font-family: 'Syne', sans-serif;
+    font-family:   sans-serif;
     font-size: 2.75rem;
     font-weight: 800;
     color: var(--blue);
@@ -313,7 +163,7 @@ const STYLES = `
     color: #fff;
     padding: 14px 30px;
     border-radius: 8px;
-    font-family: 'Syne', sans-serif;
+    font-family:   sans-serif;
     font-weight: 700;
     font-size: .95rem;
     border: none;
@@ -335,7 +185,7 @@ const STYLES = `
   .btn-ghost {
     padding: 14px 30px;
     border-radius: 8px;
-    font-family: 'Syne', sans-serif;
+    font-family:   sans-serif;
     font-weight: 600;
     font-size: .95rem;
     border: 1.5px solid var(--ink);
@@ -355,7 +205,7 @@ const STYLES = `
 
   /* section heading accent */
   .section-label {
-    font-family: 'Syne', sans-serif;
+    font-family:   sans-serif;
     font-size: .72rem;
     font-weight: 700;
     letter-spacing: .14em;
@@ -410,7 +260,7 @@ function FeatureCard({ title, body, icon, delay = 0 }) {
       }}
     >
       <div style={{ fontSize: "1.6rem", marginBottom: "10px" }}>{icon}</div>
-      <h4 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: "1rem", marginBottom: "8px" }}>{title}</h4>
+      <h4 style={{ fontFamily: " sans-serif", fontWeight: 700, fontSize: "1rem", marginBottom: "8px" }}>{title}</h4>
       <p style={{ fontSize: ".875rem", color: "var(--mid)", lineHeight: 1.6 }}>{body}</p>
     </article>
   );
@@ -463,7 +313,7 @@ export default function ErpCrm() {
             </div>
 
             <h1 style={{
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "  sans-serif",
               fontSize: "clamp(2.6rem, 6vw, 5rem)",
               fontWeight: 800,
               lineHeight: 1.05,
@@ -530,7 +380,7 @@ export default function ErpCrm() {
 
               {/* deliverables */}
               <div style={{ borderRadius: 14, padding: 30, background: "var(--ink)", color: "#fff" }}>
-                <h2 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: "1.15rem", marginBottom: 20 }}>What we deliver</h2>
+                <h2 style={{ fontFamily: " sans-serif", fontWeight: 700, fontSize: "1.15rem", marginBottom: 20 }}>What we deliver</h2>
                 <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 14 }}>
                   {[
                     "End-to-end ERP modules: Inventory, Sales, Finance, HR",
@@ -548,7 +398,7 @@ export default function ErpCrm() {
 
               {/* engagement */}
               <div style={{ borderRadius: 14, padding: 30, border: "1px solid var(--line)", background: "#fff" }}>
-                <h2 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: "1.15rem", marginBottom: 8 }}>Engagement models</h2>
+                <h2 style={{ fontFamily: " sans-serif", fontWeight: 700, fontSize: "1.15rem", marginBottom: 8 }}>Engagement models</h2>
                 <p style={{ fontSize: ".85rem", color: "var(--mid)", marginBottom: 20, lineHeight: 1.6 }}>
                   Fixed-scope MVP, iterative product development, or a dedicated team for long-term evolution.
                 </p>
@@ -584,7 +434,7 @@ export default function ErpCrm() {
         <section style={{ padding: "72px 24px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <div className="section-label">Key Features</div>
-            <h2 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem, 3vw, 2.2rem)", marginBottom: 36, letterSpacing: "-.02em" }}>
+            <h2 style={{ fontFamily: " sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem, 3vw, 2.2rem)", marginBottom: 36, letterSpacing: "-.02em" }}>
               Everything your operations need
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 16 }}>
@@ -606,7 +456,7 @@ export default function ErpCrm() {
         <section ref={techRef} className="reveal" style={{ padding: "72px 24px", background: "white" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <div className="section-label">Tech Stack</div>
-            <h2 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem,3vw,2.2rem)", marginBottom: 32, letterSpacing: "-.02em" }}>
+            <h2 style={{ fontFamily: " sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem,3vw,2.2rem)", marginBottom: 32, letterSpacing: "-.02em" }}>
               Modern, battle-tested tools
             </h2>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
@@ -629,7 +479,7 @@ export default function ErpCrm() {
         <section ref={usecaseRef} className="reveal" style={{ padding: "72px 24px" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <div className="section-label">Who benefits</div>
-            <h2 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem,3vw,2.2rem)", marginBottom: 32, letterSpacing: "-.02em" }}>
+            <h2 style={{ fontFamily: " sans-serif", fontWeight: 800, fontSize: "clamp(1.5rem,3vw,2.2rem)", marginBottom: 32, letterSpacing: "-.02em" }}>
               Built for operators, not just developers
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
@@ -642,7 +492,7 @@ export default function ErpCrm() {
                   padding: "24px", borderRadius: 12, border: "1px solid var(--line)", background: "#fff",
                 }}>
                   <div style={{ fontSize: "1.8rem", marginBottom: 12 }}>{icon}</div>
-                  <div style={{ fontFamily: "'Syne',sans-serif", fontWeight: 700, fontSize: ".95rem", marginBottom: 6 }}>{title}</div>
+                  <div style={{ fontFamily: " sans-serif", fontWeight: 700, fontSize: ".95rem", marginBottom: 6 }}>{title}</div>
                   <div style={{ fontSize: ".85rem", color: "var(--mid)", lineHeight: 1.6 }}>{desc}</div>
                 </div>
               ))}
@@ -661,7 +511,7 @@ export default function ErpCrm() {
             }}>
               <div className="blob" style={{ width: 300, height: 300, background: "rgba(26,74,255,.2)", top: -80, right: -40, animationDelay: "1s" }} />
               <div style={{ position: "relative" }}>
-                <div style={{ fontFamily: "'Syne',sans-serif", fontSize: "1.6rem", fontWeight: 800, marginBottom: 8 }}>
+                <div style={{ fontFamily: " sans-serif", fontSize: "1.6rem", fontWeight: 800, marginBottom: 8 }}>
                   Ready to streamline operations?
                 </div>
                 <p style={{ fontSize: ".9rem", color: "rgba(255,255,255,.6)", maxWidth: 420, lineHeight: 1.6 }}>

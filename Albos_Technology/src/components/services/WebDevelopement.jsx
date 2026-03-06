@@ -337,14 +337,14 @@ export default function WebDevelopment() {
   const [activeTech, setActiveTech] = useState(0);
 
   return (
-    <div className="w-full bg-white text-slate-900" style={{ fontFamily:"'Instrument Sans', 'Plus Jakarta Sans', sans-serif" }}>
+    <div className="w-full bg-white text-slate-900" style={{ fontFamily:" sans-serif" }}>
 
       {/* ─ Global styles ─ */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
 
-        .serif      { font-family:'Instrument Serif', Georgia, serif; }
-        .sans       { font-family:'Instrument Sans', sans-serif; }
+        .serif      { font-family: serif; }
+        .sans       { font-family: sans-serif; }
 
         /* ── Keyframes ── */
         @keyframes fade-up    { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:none} }
