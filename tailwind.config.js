@@ -12,4 +12,11 @@ export default {
     },
   },
   plugins: [],
+  // inside theme.extend
+colors: {
+  primary: 'var(--color-primary)',
+  accent: 'var(--color-accent)',
+  surface: 'var(--surface)',
+  muted: 'var(--muted)'
+}
 }

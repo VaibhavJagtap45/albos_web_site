@@ -1,3 +1,6 @@
+
+
+
 // src/pages/BlockchainAndWeb3.jsx
 import React from "react";
 import { motion } from "framer-motion";
@@ -34,7 +37,7 @@ const Hero = () => (
     {/* Animated background elements */}
     <div className="absolute inset-0 -z-10">
       <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-20 right-10 w-80 h-80 bg-indigo-200/30 rounded-full blur-3xl animate-pulse animation-delay-2000" />
+      <div className="absolute bottom-20 right-10 w-80 h-80 bg-blue-200/30 rounded-full blur-3xl animate-pulse animation-delay-2000" />
     </div>
 
     <div className="relative z-10 max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10">
@@ -45,8 +48,9 @@ const Hero = () => (
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="flex-1 text-center md:text-left"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-[2.6rem] lg:text-[3rem] font-bold leading-tight mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-            Blockchain & Web3 Software Development Services
+          <h1 className="text-3xl sm:text-4xl md:text-[2.6rem] lg:text-[3rem] font-bold leading-tight">Blockchain & Web3 Software</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-[2.6rem] lg:text-[3rem] font-bold leading-tight mb-4 bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
+             Development Services
           </h1>
           <p className="text-base sm:text-lg md:text-xl max-w-xl mx-auto md:mx-0 leading-relaxed text-slate-600">
             We build secure, scalable and enterprise-grade Web3 applications—Smart Contracts, DApps, NFT Platforms,
@@ -55,9 +59,9 @@ const Hero = () => (
 
           <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center md:justify-start">
             <motion.button
-              whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.5)" }}
+              // whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.5)" }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium text-base sm:text-lg shadow-lg"
+              className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
             >
               Get a Free Quote
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -267,7 +271,7 @@ const Categories = () => (
 );
 
 const UseCases = () => (
-  <section className="py-24 bg-gradient-to-b from-indigo-50 to-blue-50">
+  <section className="py-24 bg-gradient-to-b from-blue-50 to-blue-100">
     <div className="max-w-screen-2xl mx-auto px-6 text-center">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -345,11 +349,11 @@ const TechStack = () => (
 );
 
 const CTA = () => (
-  <section className="relative w-full py-16 sm:py-20 md:py-24 bg-gradient-to-br from-sky-100 via-indigo-100 to-purple-100 overflow-hidden">
+  <section className="relative w-full py-16 sm:py-20 md:py-24 bg-gradient-to-br from-blue-50 via-blue-100 to-blue-50 overflow-hidden">
     {/* Animated background shapes */}
     <div className="absolute inset-0 -z-10">
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-300/20 rounded-full blur-3xl animate-pulse animation-delay-1000" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-pulse animation-delay-1000" />
     </div>
 
     <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8 text-center relative z-10">
@@ -375,9 +379,9 @@ const CTA = () => (
         className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-14 px-4"
       >
         <motion.button
-          whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.5)" }}
+          // whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.5)" }}
           whileTap={{ scale: 0.98 }}
-          className="w-full sm:w-auto px-6 sm:px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg"
+          className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
         >
           Get a Free Quote
         </motion.button>
@@ -386,7 +390,7 @@ const CTA = () => (
           href="tel:+919766650411"
           whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(22, 163, 74, 0.5)" }}
           whileTap={{ scale: 0.98 }}
-          className="w-full sm:w-auto px-6 sm:px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg"
+          className="w-full sm:w-auto px-6 sm:px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-lg"
         >
           Call Sales
         </motion.a>

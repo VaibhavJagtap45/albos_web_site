@@ -258,7 +258,18 @@ export default function SocialMediaMarketing() {
               <h1 style={{ fontSize:"clamp(2rem,4vw,3.2rem)", fontWeight:800,  lineHeight:1.12, color:"#0f172a", marginBottom:18 }}>
                 Turn Social Media Into a{" "}
                 <span style={{ position:"relative", display:"inline-block" }}>
-                  <span style={{ background:"linear-gradient(135deg,#6366f1,#ec4899)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>Revenue Engine</span>
+                  
+   <style>{`
+  /* ── Gradient Text ── */
+.grad-text {
+background: linear-gradient(135deg,#1d4ed8 0%,#3b82f6 50%,#60a5fa 100%);
+background-size:200% auto;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-clip:text;
+animation: pan-grad 5s ease infinite;
+`}</style>
+                  <span className="grad-text">Revenue Engine</span>
                   <svg style={{ position:"absolute", bottom:-5, left:0, width:"100%" }} viewBox="0 0 220 10" preserveAspectRatio="none">
                     <path d="M2 7 Q110 2 218 7" stroke="#6366f1" strokeWidth="2.5" fill="none" strokeLinecap="round" />
                   </svg>
@@ -272,9 +283,7 @@ export default function SocialMediaMarketing() {
             </Reveal>
             <Reveal delay={0.26}>
               <div style={{ display:"flex", flexWrap:"wrap", gap:12, marginBottom:32 }}>
-                <button style={{ background:"linear-gradient(135deg,#6366f1,#4f46e5)", color:"white", border:"none", borderRadius:13, padding:"14px 32px", fontSize:15, fontWeight:600, cursor:"pointer", display:"inline-flex", alignItems:"center", gap:8, boxShadow:"0 6px 24px rgba(99,102,241,0.38)", transition:"all .3s" }}
-                  onMouseEnter={e=>e.currentTarget.style.transform="translateY(-2px)"}
-                  onMouseLeave={e=>e.currentTarget.style.transform=""}>
+                <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                   Get a Free Quote <ArrowRight size={15} />
                 </button>
                 <button style={{ background:"#0f172a", color:"white", border:"none", borderRadius:13, padding:"14px 32px", fontSize:15, fontWeight:600, cursor:"pointer", display:"inline-flex", alignItems:"center", gap:8, transition:"all .3s" }}

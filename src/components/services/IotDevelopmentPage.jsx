@@ -114,7 +114,7 @@ const IoTDevelopmentPage = () => {
       <section style={{ position: "relative", padding: "96px 0 80px", overflow: "hidden" }} className="grid-bg">
         <div className="blob" style={{ position:"absolute", left:"55%", top:"50%", width:700, height:700, background:"radial-gradient(circle, rgba(37,99,235,0.13) 0%, transparent 70%)", borderRadius:"50%", pointerEvents:"none", zIndex:0 }} />
         <div style={{ position:"absolute", top:-80, left:-80, width:320, height:320, background:"radial-gradient(circle, rgba(124,58,237,0.08) 0%, transparent 70%)", borderRadius:"50%", pointerEvents:"none" }} />
-        <div style={{ maxWidth:1280, margin:"0 auto", padding:"0 32px", position:"relative", zIndex:1 }}>
+        <div style={{ maxWidth:1350, margin:"0 auto", padding:"0 32px", position:"relative", zIndex:1 }}>
           <div style={{ display:"flex", flexWrap:"wrap", alignItems:"center", gap:48 }}>
             <div style={{ flex:"1 1 380px" }}>
               <div className="badge-pop" style={{ display:"inline-flex", alignItems:"center", gap:8, background:"#dbeafe", color:"#1d4ed8", borderRadius:999, padding:"6px 16px", fontSize:13, fontWeight:600, marginBottom:24, fontFamily:"DM Sans, sans-serif" }}>
@@ -129,9 +129,7 @@ const IoTDevelopmentPage = () => {
                 We build secure, scalable IoT and embedded systems — from low-power firmware and custom hardware to cloud platforms, device management, and AI-driven automation.
               </p>
               <div className="hero-btns" style={{ display:"flex", flexWrap:"wrap", gap:14 }}>
-                <button style={{ display:"inline-flex", alignItems:"center", gap:10, padding:"14px 28px", borderRadius:14, border:"none", background:"linear-gradient(135deg,#2563eb,#1d4ed8)", color:"#fff", fontWeight:600, fontSize:"1rem", cursor:"pointer", boxShadow:"0 8px 24px rgba(37,99,235,0.3)", transition:"all 0.25s", fontFamily:"DM Sans, sans-serif" }}
-                  onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-2px)";e.currentTarget.style.boxShadow="0 12px 32px rgba(37,99,235,0.4)"}}
-                  onMouseLeave={e=>{e.currentTarget.style.transform="";e.currentTarget.style.boxShadow="0 8px 24px rgba(37,99,235,0.3)"}}>
+                <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                   Get a Free Quote <PhoneCall size={16} />
                 </button>
                 <button style={{ display:"inline-flex", alignItems:"center", gap:10, padding:"14px 28px", borderRadius:14, border:"1.5px solid var(--border)", background:"#fff", color:"var(--ink)", fontWeight:600, fontSize:"1rem", cursor:"pointer", transition:"all 0.25s", fontFamily:"DM Sans, sans-serif" }}

@@ -324,30 +324,12 @@ const GLOBAL_CSS = `
 .btn-primary {
   position:relative; overflow:hidden;
   background:var(--blue); color:#fff;
-  padding:14px 28px; border-radius:10px;
   font-family:'Outfit',sans-serif; font-weight:600; font-size:.95rem;
   border:none; cursor:pointer; text-decoration:none;
   display:inline-flex; align-items:center; gap:8px;
   transition:transform .22s, box-shadow .22s;
 }
-.btn-primary::after {
-  content:''; position:absolute; inset:0;
-  background:rgba(255,255,255,.18);
-  transform:translateX(-110%) skewX(-15deg);
-  transition:transform .5s cubic-bezier(.22,1,.36,1);
-}
-.btn-primary:hover::after { transform:translateX(110%) skewX(-15deg); }
-.btn-primary:hover { transform:translateY(-2px); box-shadow:0 10px 28px rgba(37,99,235,.38); }
 
-.btn-dark {
-  background:var(--ink); color:#fff;
-  padding:14px 28px; border-radius:10px;
-  font-family:'Outfit',sans-serif; font-weight:600; font-size:.95rem;
-  border:none; cursor:pointer; text-decoration:none;
-  display:inline-flex; align-items:center; gap:8px;
-  transition:transform .22s, background .22s, box-shadow .22s;
-}
-.btn-dark:hover { background:#1e2230; transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.22); }
 
 .sec-label {
   font-family:'Outfit',sans-serif;
@@ -443,23 +425,22 @@ const Hero = () => (
           <div className="sec-label" style={{ opacity:0, animation:"fadeIn .5s .1s forwards" }}>
             UI/UX Design Services
           </div>
-          <h1 style={{
-            fontFamily:"'Playfair Display',serif",
-            fontSize:"clamp(2.4rem,5.5vw,4.2rem)",
-            fontWeight:900, lineHeight:1.07,
-            letterSpacing:"-.025em", marginBottom:22,
-          }}>
-            {[
-              { text:"Professional ", delay:.3 },
-              { text:<><span className="hero-ul">UI/UX Design</span></>, delay:.42 },
-              { text:<br/>, delay:0 },
-              { text:"& Web/App Services", delay:.56 },
-            ].map((w,i)=>(
-              <span key={i} style={{ display:"inline", opacity:0, animation:`fadeUp .65s cubic-bezier(.22,1,.36,1) ${w.delay}s forwards` }}>
-                {w.text}
-              </span>
-            ))}
-          </h1>
+
+                         <style>{`
+  /* ── Gradient Text ── */
+.grad-text {
+background: linear-gradient(135deg,#1d4ed8 0%,#3b82f6 50%,#60a5fa 100%);
+background-size:200% auto;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+background-clip:text;
+animation: pan-grad 5s ease infinite;
+`}</style>
+  <h1 className="serif text-5xl sm:text-6xl md:text-[3.8rem] lg:text-[4.4rem] font-normal leading-[1.06] mb-7 hero-enter"
+              style={{ animationDelay:"120ms" }}>
+              Professional UI/UX Design<br />
+              <em className="grad-text not-italic ">& Web/App Services</em>
+            </h1>
           <p style={{
             fontSize:"1.05rem", color:"var(--mid)", lineHeight:1.75,
             maxWidth:500, marginBottom:36,
@@ -468,9 +449,9 @@ const Hero = () => (
             We design stunning digital experiences — websites, dashboards, apps, and enterprise UI.
             Using Figma, Storybook, Tailwind CSS, and modern design frameworks.
           </p>
-          <div style={{ display:"flex", flexWrap:"wrap", gap:12, opacity:0, animation:"fadeUp .6s 1.05s forwards" }}>
-            <a href="#quote" className="btn-primary">✦ Get a Free Quote</a>
-            <a href="#work" className="btn-dark">View Our Work →</a>
+          <div style={{ display:"flex", flexWrap:"wrap", gap:12, }}>
+            <a href="#quote" className=" py-3.5 px-7 rounded-[10px] bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-12 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">✦ Get a Free Quote</a>
+            <a href="#work" className="py-3.5 px-7 rounded-[10px]">View Our Work →</a>
           </div>
           <div style={{ marginTop:36, display:"flex", flexWrap:"wrap", gap:28, opacity:0, animation:"fadeIn .6s 1.3s forwards" }}>
             {[["200+","Projects"],["98%","Satisfaction"],["50+","Brands"]].map(([n,l])=>(

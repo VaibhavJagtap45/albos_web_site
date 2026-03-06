@@ -121,9 +121,9 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative pt-[72px] min-h-[90vh] md:min-h-screen overflow-hidden">
+    <section className="relative pt-[52px] min-h-[90vh] md:min-h-screen overflow-hidden">
 
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 px-5 sm:px-10 lg:px-16 py-12">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 px-0  py-12">
 
         {/* LEFT CONTENT */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -140,8 +140,8 @@ export default function Hero() {
             xl:text-[4.5rem]"
           >
             The Engineering <br />
-            <span className="text-slate-400">Team Behind</span><br />
-            <span className="text-amber-500">Your Next</span><br />
+            Team Behind<br />
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-400">Your Next</span><br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-400">
               Big Product.
             </span>

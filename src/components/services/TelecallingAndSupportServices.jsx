@@ -241,7 +241,7 @@ export default function TelecallingAndSupportServices() {
         <div style={{ position:"absolute", top:-100, right:-60, width:480, height:480, borderRadius:"50%", background:"radial-gradient(circle,rgba(59,130,246,0.12),transparent 70%)", pointerEvents:"none" }} />
         <div style={{ position:"absolute", bottom:-70, left:-50, width:360, height:360, borderRadius:"50%", background:"radial-gradient(circle,rgba(16,185,129,0.08),transparent 70%)", pointerEvents:"none" }} />
 
-        <div style={{ maxWidth:1280, margin:"0 auto", padding:"0 32px", display:"flex", flexWrap:"wrap", alignItems:"center", gap:52, justifyContent:"space-between" }}>
+        <div style={{ maxWidth:1380, margin:"0 auto", padding:"0 32px", display:"flex", flexWrap:"wrap", alignItems:"center", gap:52, justifyContent:"space-between" }}>
           <div style={{ flex:"1 1 460px", maxWidth:580 }}>
             <Reveal>
               <div style={{ display:"inline-flex", alignItems:"center", gap:7, background:"rgba(37,99,235,0.08)", border:"1px solid rgba(37,99,235,0.2)", borderRadius:40, padding:"5px 15px", marginBottom:22 }}>
@@ -251,15 +251,6 @@ export default function TelecallingAndSupportServices() {
             </Reveal>
 
             <Reveal delay={0.1}>
-              {/* <h1 style={{ fontSize:"clamp(2rem,3.8vw,3.1rem)", fontWeight:800,   lineHeight:1.15, color:"#0f172a", marginBottom:18 }}>
-                Enterprise Telecalling &{" "}
-                <span style={{ position:"relative", display:"inline-block" }}>
-                  <span style={{ background:"linear-gradient(135deg,#2563eb,#0ea5e9)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>Customer Support</span>
-                  <svg style={{ position:"absolute", bottom:-5, left:0, width:"100%" }} viewBox="0 0 220 10" preserveAspectRatio="none">
-                    <path d="M2 7 Q110 2 218 7" stroke="#3b82f6" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                  </svg>
-                </span>
-              </h1> */}
               <h1 style={{
   // fontSize:"clamp(2rem,3.8vw,3.1rem)",
   fontSize:"48px",
@@ -289,10 +280,8 @@ export default function TelecallingAndSupportServices() {
             </Reveal>
 
             <Reveal delay={0.26}>
-              <div style={{ display:"flex", flexWrap:"wrap", gap:12, marginBottom:32 }}>
-                <button style={{ background:"linear-gradient(135deg,#2563eb,#1d4ed8)", color:"white", border:"none", borderRadius:13, padding:"14px 32px", fontSize:15, fontWeight:600, cursor:"pointer", display:"inline-flex", alignItems:"center", gap:8, boxShadow:"0 6px 24px rgba(37,99,235,0.35)", transition:"all 0.3s" }}
-                  onMouseEnter={e=>e.currentTarget.style.transform="translateY(-2px)"}
-                  onMouseLeave={e=>e.currentTarget.style.transform=""}>
+              <div style={{ display:"flex", flexWrap:"wrap", gap:8, marginBottom:32 }}>
+                <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                   Get a Free Quote <PhoneCall size={15} />
                 </button>
                 <button style={{ background:"#0f172a", color:"white", border:"none", borderRadius:13, padding:"14px 32px", fontSize:15, fontWeight:600, cursor:"pointer", display:"inline-flex", alignItems:"center", gap:8, transition:"all 0.3s" }}
