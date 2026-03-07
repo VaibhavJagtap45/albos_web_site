@@ -246,7 +246,7 @@ export default function SocialMediaMarketing() {
         <div style={{ position:"absolute", top:-100, right:-80, width:480, height:480, borderRadius:"50%", background:"radial-gradient(circle,rgba(99,102,241,0.12),transparent 70%)", pointerEvents:"none" }} />
         <div style={{ position:"absolute", bottom:-70, left:-50, width:340, height:340, borderRadius:"50%", background:"radial-gradient(circle,rgba(236,72,153,0.07),transparent 70%)", pointerEvents:"none" }} />
 
-        <div style={{ maxWidth:1280, margin:"0 auto", padding:"0 clamp(16px,4vw,40px)", display:"flex", flexWrap:"wrap", alignItems:"center", gap:48, justifyContent:"space-between" }}>
+        <div style={{ maxWidth:1480, margin:"0 auto", padding:"0 clamp(16px,4vw,40px)", display:"flex", flexWrap:"wrap", alignItems:"center", gap:48, justifyContent:"space-between" }}>
           <div style={{ flex:"1 1 420px", maxWidth:580 }}>
             <Reveal>
               <div style={{ display:"inline-flex", alignItems:"center", gap:7, background:"rgba(99,102,241,0.08)", border:"1px solid rgba(99,102,241,0.22)", borderRadius:40, padding:"5px 15px", marginBottom:22 }}>
@@ -283,7 +283,7 @@ animation: pan-grad 5s ease infinite;
             </Reveal>
             <Reveal delay={0.26}>
               <div style={{ display:"flex", flexWrap:"wrap", gap:12, marginBottom:32 }}>
-                <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
+                <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                   Get a Free Quote <ArrowRight size={15} />
                 </button>
                 <button style={{ background:"#0f172a", color:"white", border:"none", borderRadius:13, padding:"14px 32px", fontSize:15, fontWeight:600, cursor:"pointer", display:"inline-flex", alignItems:"center", gap:8, transition:"all .3s" }}
@@ -336,7 +336,7 @@ animation: pan-grad 5s ease infinite;
 
       {/* ══ WHY FAIL ══ */}
       <section style={{ padding:"96px clamp(16px,4vw,40px)", background:"white" }}>
-        <div style={{ maxWidth:1280, margin:"0 auto" }}>
+        <div style={{ maxWidth:1480, margin:"0 auto" }}>
           <Reveal>
             <div style={{ textAlign:"center", maxWidth:760, margin:"0 auto 72px" }}>
               <div style={{ display:"inline-block", background:"#fef2f2", borderRadius:8, padding:"4px 14px", fontSize:12, fontWeight:700, color:"#dc2626", letterSpacing:"0.08em", marginBottom:14 }}>THE PROBLEM</div>
@@ -411,7 +411,7 @@ animation: pan-grad 5s ease infinite;
 
       {/* ══ PLATFORMS ══ */}
       <section style={{ padding:"96px clamp(16px,4vw,40px)", background:"linear-gradient(180deg,#f8faff,white)" }}>
-        <div style={{ maxWidth:1280, margin:"0 auto" }}>
+        <div style={{ maxWidth:1480, margin:"0 auto" }}>
           <Reveal>
             <div style={{ textAlign:"center", maxWidth:720, margin:"0 auto 72px" }}>
               <div style={{ display:"inline-block", background:"#eff6ff", borderRadius:8, padding:"4px 14px", fontSize:12, fontWeight:700, color:"#2563eb", letterSpacing:"0.08em", marginBottom:14 }}>PLATFORMS</div>
@@ -453,7 +453,7 @@ animation: pan-grad 5s ease infinite;
 
       {/* ══ INDUSTRIES ══ */}
       <section style={{ padding:"96px clamp(16px,4vw,40px)", background:"white" }}>
-        <div style={{ maxWidth:1280, margin:"0 auto" }}>
+        <div style={{ maxWidth:1480, margin:"0 auto" }}>
           <Reveal>
             <div style={{ textAlign:"center", maxWidth:700, margin:"0 auto 72px" }}>
               <div style={{ display:"inline-block", background:"#fef3c7", borderRadius:8, padding:"4px 14px", fontSize:12, fontWeight:700, color:"#d97706", letterSpacing:"0.08em", marginBottom:14 }}>INDUSTRIES</div>
@@ -530,7 +530,7 @@ animation: pan-grad 5s ease infinite;
 
       {/* ══ WHY CHOOSE US ══ */}
       <section style={{ padding:"96px clamp(16px,4vw,40px)", background:"white" }}>
-        <div style={{ maxWidth:1280, margin:"0 auto" }}>
+        <div style={{ maxWidth:1480, margin:"0 auto" }}>
           <Reveal>
             <div style={{ textAlign:"center", maxWidth:700, margin:"0 auto 72px" }}>
               <div style={{ display:"inline-block", background:"#ecfdf5", borderRadius:8, padding:"4px 14px", fontSize:12, fontWeight:700, color:"#059669", letterSpacing:"0.08em", marginBottom:14 }}>WHY US</div>

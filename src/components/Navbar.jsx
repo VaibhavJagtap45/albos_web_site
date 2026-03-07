@@ -231,7 +231,7 @@
 //           ))}
 
 //           <li>
-//             <Link to="/contact" className="py-3.5 px-7 rounded-[10px] bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold  rounded-xl shadow-lg hover:-translate-y-1 transition">
+//             <Link to="/contact" className="py-3.5 px-7 rounded-[10px] bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold  rounded-xl shadow-lg hover:-translate-y-1 transition">
 //               Get a Quote
 //               <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
 //                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -320,7 +320,7 @@
 //           </NavLink>
 //         ))}
 
-//         <Link to="/contact" onClick={() => setMobileOpen(false)} className="bg-gradient-to-br from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:shadow-amber-200 hover:-translate-y-0.5">
+//         <Link to="/contact" onClick={() => setMobileOpen(false)} className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:shadow-amber-200 hover:-translate-y-0.5">
 //           Get a Quote →
 //         </Link>
 //       </div>
@@ -581,7 +581,7 @@ export default function Navbar() {
           ))}
 
           <li>
-            <Link to="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-white text-sm font-bold shadow-lg hover:-translate-y-1 transition">
+            <Link to="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white text-sm font-bold shadow-lg hover:-translate-y-1 transition">
               Get a Quote
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -670,7 +670,7 @@ export default function Navbar() {
           </NavLink>
         ))}
 
-        <Link to="/contact" onClick={() => setMobileOpen(false)} className="mt-5 flex items-center justify-center gap-2 w-full py-4 px-6 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-base font-bold shadow-lg hover:shadow-amber-200 hover:-translate-y-0.5 transition">
+        <Link to="/contact" onClick={() => setMobileOpen(false)} className="mt-5 flex items-center justify-center gap-2 w-full py-4 px-6 rounded-xl bg-gradient-to-br from-amber-500 btn-amber to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-base font-bold shadow-lg hover:shadow-amber-200 hover:-translate-y-0.5 transition">
           Get a Quote →
         </Link>
       </div>

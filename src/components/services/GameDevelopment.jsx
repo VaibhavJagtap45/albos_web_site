@@ -132,7 +132,7 @@
 //               <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.12 }} className="mt-4 text-slate-600 max-w-2xl">From prototypes to AAA titles — design, build, scale and operate live games with a focus on performance, monetization and retention.</motion.p>
 
 //               <div className="mt-6 flex gap-3">
-//                 <a href="/contact" className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">Get a Free Quote</a>
+//                 <a href="/contact" className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">Get a Free Quote</a>
 //                 <a href="/portfolio" className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-slate-200 bg-white text-slate-800">View Portfolio</a>
 //               </div>
 
@@ -448,7 +448,7 @@ export default function GameDevelopmentEnhanced() {
     <div className="min-h-screen bg-white text-slate-900 antialiased">
       {/* HERO */}
       <header  className=" relative pt-20 pb-10">
-        <div  style={{ maxWidth: 1380, margin: "0 auto" }} className="max-w-screen-2xl mx-auto px-6">
+        <div  style={{ maxWidth: 1380, margin: "0 auto" }} className="max-w-screen-2xl mx-auto ">
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="flex-1">
                <style>{`
@@ -469,7 +469,7 @@ animation: pan-grad 5s ease infinite;
               <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.12 }} className="mt-4 text-slate-600 max-w-2xl">From prototypes to AAA titles — design, build, scale and operate live games with a focus on performance, monetization and retention.</motion.p>
 
               <div className="mt-6 flex gap-3">
-                <a href="/contact" className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">Get a Free Quote</a>
+                <a href="/contact" className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">Get a Free Quote</a>
                 <a href="/portfolio" className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-slate-200 bg-white text-slate-800">View Portfolio</a>
               </div>
 
@@ -504,7 +504,7 @@ animation: pan-grad 5s ease infinite;
 
       {/* FEATURES */}
       <section className="py-12">
-        <div className="max-w-screen-2xl mx-auto px-6">
+        <div className="max-w-screen-2xl mx-auto ">
           <motion.div variants={list} initial="hidden" animate="show" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((f, i) => (
               <motion.div key={i} variants={fade} className="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-lg transition">
@@ -550,7 +550,7 @@ animation: pan-grad 5s ease infinite;
                       </div>
 
                       <div className="mt-4 flex items-center gap-3">
-                        <a href="/contact" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 text-white text-sm shadow-sm">Start a Project</a>
+                        <a href="/contact" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-amber-500 btn-amber to-amber-600 text-white text-sm shadow-sm">Start a Project</a>
                         <a href="/portfolio" className="text-sm text-blue-600 underline">Explore</a>
                       </div>
                     </div>
@@ -637,7 +637,7 @@ animation: pan-grad 5s ease infinite;
           <p className="text-neutral-700 mt-3 sm:mt-4">Tell us your goals — we will map a roadmap, team and timeline to ship.</p>
 
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="/contact" className="px-6 py-3 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-white font-semibold shadow">Get a Quote</a>
+            <a href="/contact" className="px-6 py-3 rounded-xl bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-semibold shadow">Get a Quote</a>
             <a href="tel:+919766650411" className="px-6 py-3 rounded-xl border border-blue-100 bg-white text-blue-700 font-semibold">Call Sales</a>
           </div>
         </div>

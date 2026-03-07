@@ -156,7 +156,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-8">
             <Link
               to="/contact"
-              className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-7 py-3 rounded-xl shadow-lg hover:-translate-y-1 transition"
+              className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-7 py-3 rounded-xl shadow-lg hover:-translate-y-1 transition"
             >
               Start a Project →
             </Link>

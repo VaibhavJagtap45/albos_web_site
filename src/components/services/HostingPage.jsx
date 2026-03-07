@@ -267,7 +267,7 @@
 // //           </p>
 
 // //           <div style={{ display:"flex", flexWrap:"wrap", gap:12, opacity:0, animation:"fadeUp .6s 1.05s forwards" }}>
-// //             <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">✦ Get a Free Quote</button>
+// //             <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">✦ Get a Free Quote</button>
 // //             <button className="btn-dark">View Plans →</button>
 // //           </div>
 
@@ -465,7 +465,7 @@
 // //             </p>
 // //           </div>
 // //           <div style={{ display:"flex", gap:12, flexWrap:"wrap", position:"relative" }}>
-// //             <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
+// //             <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
 // //             >✦ Get a Free Quote</button>
 // //             <a href="tel:+919766650411" style={{
 // //               padding:"14px 28px", borderRadius:10,
@@ -796,7 +796,7 @@
 //           </p>
 
 //           <div style={{ display:"flex", flexWrap:"wrap", gap:12, opacity:0, animation:"fadeUp .6s 1.05s forwards" }}>
-//             <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">✦ Get a Free Quote</button>
+//             <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">✦ Get a Free Quote</button>
 //             <button className="btn-dark">View Plans →</button>
 //           </div>
 
@@ -994,7 +994,7 @@
 //             </p>
 //           </div>
 //           <div style={{ display:"flex", gap:12, flexWrap:"wrap", position:"relative" }}>
-//             <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
+//             <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
 //             >✦ Get a Free Quote</button>
 //             <a href="tel:+919766650411" style={{
 //               padding:"14px 28px", borderRadius:10,
@@ -1076,7 +1076,7 @@ import React, { useEffect, useRef, useState } from "react";
 const CSS = `
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
-:root {
+:host-root {
   --bg:      #f7f5f0;
   --white:   #ffffff;
   --ink:     #0f1117;
@@ -1091,8 +1091,11 @@ const CSS = `
   --r:       14px;
 }
 
-*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
-
+.host-root *,
+.host-root *::before,
+.host-root *::after {
+  box-sizing: border-box;
+}
 .host-root {
   font-family:  sans-serif;
   background: var(--bg);
@@ -1341,7 +1344,7 @@ const Hero = () => (
           </p>
 
           <div style={{ display:"flex", flexWrap:"wrap", gap:12, opacity:0, animation:"fadeUp .6s 1.05s forwards" }}>
-            <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">✦ Get a Free Quote</button>
+            <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">✦ Get a Free Quote</button>
             <button className="btn-dark">View Plans →</button>
           </div>
 
@@ -1380,7 +1383,7 @@ const Ticker = () => {
       <div className="ticker-wrap">
         <div className="ticker-inner">
           {[...items,...items].map((t,i) => (
-            <span key={i} style={{ padding:"0 28px", fontSize:".72rem", fontWeight:600, color:"rgba(255,255,255,.38)", whiteSpace:"nowrap", letterSpacing:".12em", textTransform:"uppercase" }}>
+            <span key={i} style={{ padding:"0 28px", fontSize:".72rem", fontWeight:600, color:"rgba(27, 21, 21, 0.97)", whiteSpace:"nowrap", letterSpacing:".12em", textTransform:"uppercase" }}>
               {t} <span style={{ color:"var(--blue2)", margin:"0 4px" }}>▸</span>
             </span>
           ))}
@@ -1564,7 +1567,7 @@ const ContactSection = () => {
             </p>
           </div>
           <div style={{ display:"flex", gap:12, flexWrap:"wrap", position:"relative" }}>
-            <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
+            <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
             >✦ Get a Free Quote</button>
             <a href="tel:+919766650411" style={{
               padding:"14px 28px", borderRadius:10,

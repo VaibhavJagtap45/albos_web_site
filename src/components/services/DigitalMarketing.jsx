@@ -285,7 +285,7 @@
 //             </Reveal>
 //             <Reveal delay={0.24}>
 //               <div className="btns" style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 32 }}>
-//                 <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
+//                 <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
 //                   Get a Free Quote <PhoneCall size={14} />
 //                 </button>
 //                 <button style={{ background: "#0f172a", color: "white", border: "none", borderRadius: 13, padding: "14px 30px", fontSize: 15, fontWeight: 600, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 8, transition: "all .3s" }}
@@ -959,8 +959,8 @@ export default function DigitalMarketing() {
         <div style={{ position: "absolute", top: -90, right: -70, width: 500, height: 500, borderRadius: "50%", background: "radial-gradient(circle,rgba(59,130,246,0.1),transparent 70%)", pointerEvents: "none" }} />
         <div style={{ position: "absolute", bottom: -60, left: -50, width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle,rgba(37,99,235,0.07),transparent 70%)", pointerEvents: "none" }} />
 
-        <div className="hero-wrap" style={{ maxWidth: 1380, margin: "0 auto", padding: "0 clamp(16px,4vw,48px)", display: "flex", flexWrap: "wrap", alignItems: "center", gap: 52, justifyContent: "space-between" }}>
-          <div className="hero-ctr" style={{ flex: "1 1 420px", maxWidth: 580 }}>
+        <div className="hero-wrap" style={{ maxWidth: 1480, margin: "0 auto", padding: "0 clamp(16px,4vw,48px)", display: "flex", flexWrap: "wrap", alignItems: "center", gap: 52, justifyContent: "space-between" }}>
+          <div className="hero-ctr" style={{ flex: "1 1 420px", maxWidth: 780 }}>
             <Reveal>
               <div style={{ display: "inline-flex", alignItems: "center", gap: 7, background: "rgba(59,130,246,0.09)", border: "1px solid rgba(59,130,246,0.2)", borderRadius: 40, padding: "5px 15px", marginBottom: 22 }}>
                 <TrendingUp size={12} color="#3b82f6" />
@@ -985,7 +985,7 @@ export default function DigitalMarketing() {
             </Reveal>
             <Reveal delay={0.24}>
               <div className="btns" style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 32 }}>
-                <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
+                <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                   Get a Free Quote <PhoneCall size={14} />
                 </button>
                 <button style={{ background: "#0f172a", color: "white", border: "none", borderRadius: 13, padding: "14px 30px", fontSize: 15, fontWeight: 600, cursor: "pointer", display: "inline-flex", alignItems: "center", gap: 8, transition: "all .3s" }}
@@ -1037,11 +1037,10 @@ export default function DigitalMarketing() {
       </section>
 
       {/* CHALLENGES */}
-      <section style={{ padding: "96px clamp(16px,4vw,48px)", background: "white" }}>
-        <div style={{ maxWidth: 1380, margin: "0 auto" }}>
+      <section style={{ padding: "56px clamp(16px,4vw,48px)", background: "white" }}>
+        <div style={{ maxWidth: 1480, margin: "0 auto" }}>
           <Reveal>
             <div style={{ textAlign: "center", maxWidth: 740, margin: "0 auto 72px" }}>
-              <div style={{ display: "inline-block", background: "#fef2f2", borderRadius: 8, padding: "4px 14px", fontSize: 12, fontWeight: 700, color: "#dc2626", letterSpacing: "0.08em", marginBottom: 14 }}>THE PROBLEM</div>
               <h2 style={{ fontSize: "clamp(1.7rem,3.2vw,2.8rem)", fontWeight: 800, fontFamily: " sans-serif", color: "#0f172a", lineHeight: 1.2, marginBottom: 14 }}>Why Most Social Media Efforts Fail to Deliver Results</h2>
               <p style={{ fontSize: 16, color: "#475569", lineHeight: 1.75 }}>Most businesses are active on social platforms, yet very few achieve consistent leads or revenue. The real challenge lies in moving beyond posting to building a structured, data-driven growth system.</p>
             </div>

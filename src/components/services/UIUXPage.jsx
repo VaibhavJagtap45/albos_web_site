@@ -418,7 +418,7 @@ const Hero = () => (
       backgroundImage:"linear-gradient(var(--light) 1px,transparent 1px),linear-gradient(90deg,var(--light) 1px,transparent 1px)",
       backgroundSize:"48px 48px", opacity:.3,
     }}/>
-    <div style={{ maxWidth:1200, margin:"0 auto", position:"relative", zIndex:1 }}>
+    <div style={{ maxWidth:1380, margin:"0 auto", position:"relative", zIndex:1 }}>
       <div style={{ display:"flex", flexWrap:"wrap", alignItems:"center", gap:48, justifyContent:"space-between" }}>
         {/* text side */}
         <div style={{ flex:"1 1 420px", minWidth:0 }}>
@@ -450,7 +450,7 @@ animation: pan-grad 5s ease infinite;
             Using Figma, Storybook, Tailwind CSS, and modern design frameworks.
           </p>
           <div style={{ display:"flex", flexWrap:"wrap", gap:12, }}>
-            <a href="#quote" className=" py-3.5 px-7 rounded-[10px] bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-12 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">✦ Get a Free Quote</a>
+            <a href="#quote" className=" py-3.5 px-7 rounded-[10px] bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-12 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">✦ Get a Free Quote</a>
             <a href="#work" className="py-3.5 px-7 rounded-[10px]">View Our Work →</a>
           </div>
           <div style={{ marginTop:36, display:"flex", flexWrap:"wrap", gap:28, opacity:0, animation:"fadeIn .6s 1.3s forwards" }}>
@@ -515,7 +515,7 @@ const Services = () => {
   const hRef = useReveal();
   return (
     <section id="services" style={{ padding:"88px 24px", background:"var(--white)" }}>
-      <div style={{ maxWidth:1200, margin:"0 auto" }}>
+      <div style={{ maxWidth:1380, margin:"0 auto" }}>
         <div ref={hRef} className="reveal" style={{ textAlign:"center", marginBottom:52 }}>
           <div className="sec-label" style={{ justifyContent:"center" }}>What we offer</div>
           <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:"clamp(2rem,4vw,3rem)", fontWeight:900, letterSpacing:"-.02em", marginBottom:12 }}>
@@ -712,8 +712,8 @@ const contactItems = [
 const ContactCards = () => {
   const hRef = useReveal();
   return (
-    <section style={{ padding:"88px 24px 96px", background:"var(--white)" }}>
-      <div style={{ maxWidth:1200, margin:"0 auto" }}>
+    <section style={{ padding:"88px 24px 96px 20px", background:"var(--white)" }}>
+      <div style={{ maxWidth:1380, margin:"0 auto" }}>
         {/* CTA banner */}
         <div ref={hRef} className="reveal" style={{
           borderRadius:20, padding:"56px 44px",

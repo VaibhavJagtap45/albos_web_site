@@ -14,7 +14,7 @@ function ServicesHero() {
       <div className="gold-line" />
       <div className="relative z-10 max-w-3xl">
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-8 h-px bg-gradient-to-r from-amber-500 to-transparent" />
+          <div className="w-8 h-px bg-gradient-to-r from-amber-500 btn-amber to-transparent" />
           <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-amber-600">
             What We Build
           </span>
@@ -35,7 +35,7 @@ function ServicesHero() {
         </p>
         <Link
           to="/contact"
-          className="bg-gradient-to-br from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition-all text-sm"
+          className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition-all text-sm"
         >
           Discuss Your Project →
         </Link>

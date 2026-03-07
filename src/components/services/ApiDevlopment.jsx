@@ -305,7 +305,7 @@
 //               </p>
 
 //               <div className="flex flex-wrap gap-4" style={{ animation: "slide-in-right 0.8s ease 0.5s both" }}>
-//                 <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
+//                 <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
 //                   Get a Free Quote
 //                   <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
 //                 </button>
@@ -864,7 +864,7 @@ const techStack = {
   },
   "Cloud & DevOps": {
     desc: "Cloud-native deployments with CI/CD, monitoring, containerization & cost-optimized scaling.",
-    color: "from-amber-500 to-amber-600",
+    color: "from-amber-500 btn-amber to-amber-600",
     items: [
       { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/960px-Amazon_Web_Services_Logo.svg.png", name: "AWS", desc: "Global secure cloud infrastructure." },
       { icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg", name: "Google Cloud", desc: "AI-driven cloud platform." },
@@ -1075,7 +1075,7 @@ export default function ApiDevelopment() {
               </p>
 
               <div className="flex flex-wrap gap-4" style={{ animation: "slide-in-right 0.8s ease 0.5s both" }}>
-                <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
+                <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                   Get a Free Quote
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </button>

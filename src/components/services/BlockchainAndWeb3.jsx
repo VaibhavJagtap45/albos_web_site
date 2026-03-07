@@ -40,7 +40,7 @@ const Hero = () => (
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-blue-200/30 rounded-full blur-3xl animate-pulse animation-delay-2000" />
     </div>
 
-    <div className="relative z-10 max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10">
+    <div className="relative z-10 max-w-screen-2xl mx-[50px] px-4 sm:px-6 md:px-10">
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-14">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -61,7 +61,7 @@ const Hero = () => (
             <motion.button
               // whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.5)" }}
               whileTap={{ scale: 0.98 }}
-              className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
+              className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
             >
               Get a Free Quote
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -381,7 +381,7 @@ const CTA = () => (
         <motion.button
           // whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(59, 130, 246, 0.5)" }}
           whileTap={{ scale: 0.98 }}
-          className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
+          className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition"
         >
           Get a Free Quote
         </motion.button>
@@ -390,7 +390,7 @@ const CTA = () => (
           href="tel:+919766650411"
           whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(22, 163, 74, 0.5)" }}
           whileTap={{ scale: 0.98 }}
-          className="w-full sm:w-auto px-6 sm:px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-lg"
+          className="w-full sm:w-auto px-6 sm:px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-amber-500 btn-amber to-amber-600 text-white shadow-lg"
         >
           Call Sales
         </motion.a>

@@ -275,7 +275,7 @@ ${formData.details || "N/A"}
               className={`w-full py-4 rounded-xl font-bold text-sm transition-all duration-200 flex items-center justify-center gap-2 mt-1
                 ${submitted
                   ? "bg-gradient-to-br from-teal-500 to-teal-600 text-white cursor-not-allowed"
-                  : "bg-gradient-to-br from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:shadow-amber-200 hover:-translate-y-0.5"
+                  : "bg-gradient-to-br from-amber-500 btn-amber to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-lg hover:shadow-amber-200 hover:-translate-y-0.5"
                 }`}
             >
               {submitted ? "✓ Sent! We'll be in touch within 24 hours" : (loading ? "Sending..." : "Send Project Brief →")}

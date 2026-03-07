@@ -261,7 +261,7 @@
 //             </p>
 
 //             <div className="flex flex-wrap gap-4 mb-14 hero-enter" style={{ animationDelay:"360ms" }}>
-//               <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
+//               <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
 //                 Get a Free Quote
 //               </button>
 //               <button className="outline-btn px-8 py-4 rounded-2xl font-semibold text-slate-700 text-base">
@@ -945,7 +945,7 @@ animation:ripple 2s ease-out infinite;
             </p>
 
             <div className="flex flex-wrap gap-4 mb-14 hero-enter" style={{ animationDelay:"360ms" }}>
-              <button className="bg-gradient-to-br from-amber-500 to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
+              <button className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">
                 Get a Free Quote
               </button>
               <button className="outline-btn px-8 py-4 rounded-2xl font-semibold text-slate-700 text-base">
