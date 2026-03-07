@@ -114,7 +114,7 @@ const IoTDevelopmentPage = () => {
       <section style={{ position: "relative", padding: "96px 0 80px", overflow: "hidden" }} className="grid-bg">
         <div className="blob" style={{ position:"absolute", left:"55%", top:"50%", width:700, height:700, background:"radial-gradient(circle, rgba(37,99,235,0.13) 0%, transparent 70%)", borderRadius:"50%", pointerEvents:"none", zIndex:0 }} />
         <div style={{ position:"absolute", top:-80, left:-80, width:320, height:320, background:"radial-gradient(circle, rgba(124,58,237,0.08) 0%, transparent 70%)", borderRadius:"50%", pointerEvents:"none" }} />
-        <div style={{ maxWidth:1480, margin:"0 auto", padding:"0 32px", position:"relative", zIndex:1 }}>
+        <div style={{ maxWidth:1450, margin:"0 auto", padding:"0 32px", position:"relative", zIndex:1 }}>
           <div style={{ display:"flex", flexWrap:"wrap", alignItems:"center", gap:48 }}>
             <div style={{ flex:"1 1 280px" }}>
               <div className="badge-pop" style={{ display:"inline-flex", alignItems:"center", gap:8, background:"#dbeafe", color:"#1d4ed8", borderRadius:999, padding:"6px 16px", fontSize:13, fontWeight:600, marginBottom:24, fontFamily:"DM Sans, sans-serif" }}>

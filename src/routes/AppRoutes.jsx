@@ -38,10 +38,8 @@ export default function AppRoutes() {
           <Route path="/services/socialMedia-marketing" element={<SocialMediaMarketing />} />
           <Route path="/services/telecalling-support" element={<TelecallingAndSupportServices />} />
           <Route path="/services/uiux-design-company" element={<UIUXPage />} />
-          {/* <Route path="/services/uiux-design-company" element={<UIUXPage />} /> */}
           <Route path="/services/digital-marketing-seo" element={<DigitalMarketing />} />
           <Route path="/services/erp-crm" element={<ErpCrmSystem />} />
-          {/* <Route path="/services/uiux-design-company" element={<UIUXPage />} /> */}
           <Route path="/services/iot-application-development-services" element={<IoTDevelopmentPage />} />
           
           <Route path="/portfolio" element={<PortfolioPage />} />

@@ -1,6 +1,3 @@
-
-
-
 // src/pages/BlockchainAndWeb3.jsx
 import React from "react";
 import { motion } from "framer-motion";
@@ -40,7 +37,7 @@ const Hero = () => (
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-blue-200/30 rounded-full blur-3xl animate-pulse animation-delay-2000" />
     </div>
 
-    <div className="relative z-10 max-w-screen-2xl mx-[50px] px-4 sm:px-6 md:px-10">
+    <div className="relative z-10 max-w-screen-2xl mx-[30px] px-4 sm:px-6 md:px-10">
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-14">
         <motion.div
           initial={{ opacity: 0, x: -50 }}

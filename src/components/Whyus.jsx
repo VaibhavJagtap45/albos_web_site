@@ -21,7 +21,7 @@ export default function WhyUs() {
     <section id="why" className="py-24 px-[5%] bg-white relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         {/* Left */}
-        <div className="reveal">
+        <div className="">
           <STag color="gold">Why Albos</STag>
           <h2 className="font-display font-black text-4xl md:text-5xl tracking-tight leading-tight mb-4">
             We Own<br />Outcomes,<br />
@@ -46,7 +46,7 @@ export default function WhyUs() {
         </div>
 
         {/* Right — timeline */}
-        <div className="reveal bg-stone-50 border border-slate-200 rounded-3xl p-8 relative overflow-hidden">
+        <div className=" bg-stone-50 border border-slate-200 rounded-3xl p-8 relative overflow-hidden">
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent opacity-50" />
           <STag color="blue">10-Year Journey</STag>
           <div className="mt-4">

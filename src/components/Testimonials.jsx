@@ -22,7 +22,7 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="py-24 px-[5%] bg-slate-50 relative z-10">
       {/* Header */}
-      <div className="flex justify-between items-end flex-wrap gap-6 mb-14 reveal">
+      <div className="flex justify-between items-end flex-wrap gap-6 mb-14 ">
         <div>
           <STag color="teal">Client Results</STag>
           <h2 className="font-display font-black text-4xl md:text-5xl tracking-tight leading-tight">
@@ -36,7 +36,7 @@ export default function Testimonials() {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
         {CARDS.map((c, i) => (
           <div
             key={i}

@@ -1,253 +1,3 @@
-// import React from "react";
-
-// // UI/UX Landing page converted from plain HTML to a single-file React component
-// // Uses Tailwind CSS classes. Split into smaller components inside this file for clarity.
-
-
-// const Hero = () => (
-//   <section className="relative w-full pt-20 pb-16 overflow-hidden">
-//     <div className="absolute inset-0 -z-10">
-//       <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(150,150,255,0.12)_0%,transparent_70%)] opacity-70 pointer-events-none"></div>
-//     </div>
-
-//     <div className="relative z-10 max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10">
-//       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-14">
-//         <div className="flex-1 text-center md:text-left">
-//           <h1 className="text-3xl sm:text-4xl md:text-[2.4rem] lg:text-5xl font-semibold leading-tight mb-4">Professional UI/UX Design & Web/App Designing Services</h1>
-//           <p className="text-base sm:text-lg md:text-xl max-w-xl mx-auto md:mx-0 text-slate-700">We design stunning digital experiences — websites, dashboards, apps, and enterprise UI. Using Figma, Storybook, Tailwind CSS, and modern design frameworks.</p>
-
-//           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center md:justify-start">
-//             <a href="#quote" className="inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-8 py-4 text-white font-medium hover:bg-blue-700">Get a Free Quote</a>
-//             <a href="#work" className="inline-flex items-center gap-2 rounded-2xl bg-neutral-900 px-8 py-4 text-white font-medium hover:bg-neutral-800">View Our Work</a>
-//           </div>
-//         </div>
-
-//         <div className="flex-1 flex justify-center max-w-[520px]">
-//           <img src="https://cdni.iconscout.com/illustration/premium/thumb/ui-ux-designers-team-working-together-illustration-svg-download-png-6207662.png" alt="UI UX Design Illustration" className="object-contain drop-shadow-2xl" />
-//         </div>
-//       </div>
-//     </div>
-//   </section>
-// );
-
-// const FeatureCard = ({ img, title, children }) => (
-//   <div className="bg-white flex flex-col gap-4 p-6 rounded-md shadow hover:shadow-xl border transition-all">
-//     <div className="flex items-center gap-4">
-//       <img src={img} alt={title} className="w-12 h-12 object-contain" />
-//       <div className="font-semibold text-lg">{title}</div>
-//     </div>
-//     <p className="text-slate-600 mt-2">{children}</p>
-//   </div>
-// );
-
-// const Services = () => (
-//   <section id="services" className="w-full py-24 bg-white">
-//     <div className="max-w-screen-2xl mx-auto px-6">
-//       <h2 className="text-4xl font-bold text-center mb-4">Our UI/UX Expertise</h2>
-//       <p className="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">We craft modern, user-friendly, conversion-focused designs trusted by global businesses, startups, and enterprise applications.</p>
-
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-//         <FeatureCard img="https://cdn-icons-png.flaticon.com/512/1829/1829585.png" title="Website UI/UX Design">Conversion-focused website designs that follow modern layouts, accessibility, and micro-interactions.</FeatureCard>
-//         <FeatureCard img="https://cdn-icons-png.flaticon.com/512/906/906343.png" title="Mobile App Design">iOS & Android app UI (Material Design + Human Interface Guidelines compliant).</FeatureCard>
-//         <FeatureCard img="https://cdn-icons-png.flaticon.com/512/4149/4149676.png" title="Dashboard & SaaS UI">Clean, functional dashboard UI with professional components and light/dark mode.</FeatureCard>
-//         <FeatureCard img="https://cdn-icons-png.flaticon.com/512/3500/3500833.png" title="E-Commerce Design">User-friendly product pages, checkout flows, and high-performance eCommerce UI.</FeatureCard>
-//         <FeatureCard img="https://cdn-icons-png.flaticon.com/512/1829/1829586.png" title="Brand Identity & Design System">Full design system, color palette, typography, components library & guidelines.</FeatureCard>
-//         <FeatureCard img="https://cdn-icons-png.flaticon.com/512/9129/9129524.png" title="Landing Page Design">High-conversion landing pages for marketing, SaaS, apps, and enterprise websites.</FeatureCard>
-//       </div>
-//     </div>
-//   </section>
-// );
-
-// const ProcessCard = ({ img, step, title, children }) => (
-//   <div className="p-6 rounded-md shadow-lg border bg-white">
-//     <div className="flex items-center gap-4">
-//       <img src={img} alt={title} className="w-14 h-14" />
-//       <div className="font-semibold text-lg">{step}. {title}</div>
-//     </div>
-//     <p className="text-slate-600 mt-4">{children}</p>
-//   </div>
-// );
-
-// const Process = () => (
-//   <section className="w-full py-24 bg-gradient-to-b from-blue-50 to-indigo-50">
-//     <div className="max-w-screen-2xl mx-auto px-6">
-//       <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">Our Design Process</h2>
-//       <p className="text-lg text-slate-700 text-center max-w-3xl mx-auto mb-12">A structured design workflow that ensures quality, clarity, and a seamless user experience.</p>
-
-//       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-//         <ProcessCard img="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" step="01" title="Discovery & Research">Understanding business goals, users, competitors, and industry best practices.</ProcessCard>
-//         <ProcessCard img="https://cdn-icons-png.flaticon.com/512/9441/9441571.png" step="02" title="Wireframing">Low-fidelity layouts to define structure, user flow, and key interactions.</ProcessCard>
-//         <ProcessCard img="https://cdn-icons-png.flaticon.com/512/1829/1829584.png" step="03" title="UI Design">High-fidelity visual design focusing on branding, colors, spacing, and modern UI trends.</ProcessCard>
-//         <ProcessCard img="https://cdn-icons-png.flaticon.com/512/2217/2217062.png" step="04" title="Prototyping">Interactive prototypes for usability tests and client feedback.</ProcessCard>
-//         <ProcessCard img="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" step="05" title="Design System">Reusable components, typography, color system, spacing & design tokens.</ProcessCard>
-//         <ProcessCard img="https://cdn-icons-png.flaticon.com/512/3076/3076129.png" step="06" title="Developer Handoff">Complete handoff via Figma + Storybook with assets, specs & UI guidelines.</ProcessCard>
-//       </div>
-//     </div>
-//   </section>
-// );
-
-// const Tools = () => (
-//   <section className="w-full py-24 bg-white">
-//     <div className="max-w-screen-2xl mx-auto px-6 text-center">
-//       <h2 className="text-2xl md:text-3xl font-bold mb-4">Design Tools & Frameworks</h2>
-//       <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-10">We use industry-leading tools trusted by top product teams worldwide.</p>
-
-//       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
-//         {[
-//           { img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg', title: 'Figma', desc: 'Industry-leading UI/UX tool for designing premium apps and websites.' },
-//           { img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-line.svg', title: 'Adobe XD', desc: 'Modern UI design + prototyping workflows.' },
-//           { img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg', title: 'Storybook', desc: 'Component-driven UI development with reusable design patterns.' },
-//           { img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg', title: 'Bootstrap 5', desc: 'Responsive web design with powerful layout utilities.' },
-//           { img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg', title: 'Tailwind CSS', desc: 'Modern utility-first CSS framework for fast UI development.' },
-//           { img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg', title: 'Material UI', desc: 'Google’s Material Design framework for web apps.' },
-//           { img: 'https://img.icons8.com/color/512/chakra-ui.png', title: 'Chakra UI', desc: 'Accessible, flexible, modular UI library.' },
-//           { img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/antdesign/antdesign-original.svg', title: 'Ant Design', desc: 'Enterprise-grade UI components for dashboards and SaaS apps.' }
-//         ].map((t) => (
-//           <div key={t.title} className="bg-white rounded-md p-6 shadow border hover:shadow-xl transition-all flex flex-col items-center text-center">
-//             <img src={t.img} alt={t.title} className="w-14 h-14" />
-//             <h3 className="text-xl font-semibold mt-4">{t.title}</h3>
-//             <p className="text-slate-600 text-sm mt-2">{t.desc}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   </section>
-// );
-
-// const Portfolio = () => (
-//   <section id="work" className="w-full py-24 bg-gradient-to-b from-slate-50 to-white">
-//     <div className="max-w-screen-2xl mx-auto px-6 text-center">
-//       <h2 className="text-2xl md:text-3xl font-bold">Our UI/UX Portfolio</h2>
-//       <p className="text-lg text-slate-600 max-w-3xl mx-auto mt-4 mb-12">Have a look at our premium design projects crafted for global brands and startups.</p>
-
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-//         {[
-//           { img: 'https://img.freepik.com/free-vector/website-creator-concept-illustration_114360-2900.jpg', title: 'SaaS Dashboard UI', badge: 'Dashboard UI/UX' },
-//           { img: 'https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg', title: 'Mobile App UI', badge: 'App Design' },
-//           { img: 'https://img.freepik.com/free-vector/landing-page-concept-illustration_114360-7873.jpg', title: 'Landing Page UI', badge: 'Web Design' },
-//           { img: 'https://img.freepik.com/free-vector/ecommerce-web-page-template_52683-67347.jpg', title: 'eCommerce UI', badge: 'eCommerce' }
-//         ].map((p) => (
-//           <div key={p.title} className="rounded-md shadow-lg border overflow-hidden hover:shadow-2xl">
-//             <div className="relative h-48 w-full">
-//               <img src={p.img} alt={p.title} className="object-cover w-full h-full" />
-//             </div>
-//             <div className="p-4">
-//               <h3 className="text-lg font-semibold">{p.title}</h3>
-//               <span className="inline-flex items-center mt-3 rounded-full bg-blue-600 px-3 py-1 text-xs font-medium text-white">{p.badge}</span>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   </section>
-// );
-
-// const ContactCards = () => (
-//   <section className="relative w-full py-16 bg-gradient-to-br from-sky-100 to-indigo-100">
-//     <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-8">
-//       <div className="text-center max-w-2xl mx-auto mb-8">
-//         <h2 className="text-3xl font-bold">Ready to Grow Your Business?</h2>
-//         <p className="text-neutral-700 mt-3">Speak with our experts today. We help brands scale with powerful development, design, automation, and cloud solutions.</p>
-//       </div>
-
-//       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-//         <a href="#quote" className="w-full sm:w-auto px-6 py-3 rounded-xl font-semibold bg-blue-600 text-white text-center">Get a Free Quote</a>
-//         <a href="tel:+919766650411" className="w-full sm:w-auto px-6 py-3 rounded-xl font-semibold bg-green-600 text-white text-center">Call Sales</a>
-//       </div>
-
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-//         <div className="p-6 rounded-2xl bg-white border shadow-sm">
-//           <div className="w-12 h-12 mx-auto flex items-center justify-center bg-blue-100 rounded-xl">
-//             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
-//           </div>
-//           <h3 className="text-lg font-semibold mt-4 text-center">Phone Number</h3>
-//           <p className="text-neutral-600 mt-2 text-center">+91 9766650411</p>
-//         </div>
-
-//         <div className="p-6 rounded-2xl bg-white border shadow-sm">
-//           <div className="w-12 h-12 mx-auto flex items-center justify-center bg-blue-100 rounded-xl">
-//             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
-//           </div>
-//           <h3 className="text-lg font-semibold mt-4 text-center">Email Address</h3>
-//           <p className="text-neutral-600 mt-2 text-center">info@albostechnologies.com</p>
-//         </div>
-
-//         <div className="p-6 rounded-2xl bg-white border shadow-sm">
-//           <div className="w-12 h-12 mx-auto flex items-center justify-center bg-blue-100 rounded-xl">
-//             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
-//           </div>
-//           <h3 className="text-lg font-semibold mt-4 text-center">Office Location</h3>
-//           <p className="text-neutral-600 mt-2 text-center">Office no. 78, 5th floor, Kunal Plaza, Pune, Maharashtra 411019</p>
-//         </div>
-
-//         <div className="p-6 rounded-2xl bg-white border shadow-sm">
-//           <div className="w-12 h-12 mx-auto flex items-center justify-center bg-blue-100 rounded-xl">
-//             <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6l4 2" /><circle cx="12" cy="12" r="10" /></svg>
-//           </div>
-//           <h3 className="text-lg font-semibold mt-4 text-center">Office Hours</h3>
-//           <p className="text-neutral-600 mt-2 text-center">Mon – Sat, 10:00 AM – 7:00 PM</p>
-//         </div>
-//       </div>
-//     </div>
-//   </section>
-// );
-
-
-// export default function UIUXPage() {
-//   return (
-//     <div className="antialiased text-slate-900">
-      
-//       <main className="pt-16">
-//         <Hero />
-//         <Services />
-//         <Process />
-//         <Tools />
-//         <Portfolio />
-//         <ContactCards />
-//       </main>
-      
-//     </div>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useEffect, useRef } from "react";
 
 /* ─────────────────────────────────────────────────────────────
@@ -268,7 +18,7 @@ const GLOBAL_CSS = `
   --r: 14px;
 }
 
-*, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+*, *::before, *::after {  }
 
 .uiux-root {
   font-family: 'Outfit', sans-serif;
@@ -321,14 +71,7 @@ const GLOBAL_CSS = `
 .ticker-wrap { overflow:hidden; }
 .ticker-inner { display:flex; width:max-content; animation:marquee 24s linear infinite; }
 
-.btn-primary {
-  position:relative; overflow:hidden;
-  background:var(--blue); color:#fff;
-  font-family:'Outfit',sans-serif; font-weight:600; font-size:.95rem;
-  border:none; cursor:pointer; text-decoration:none;
-  display:inline-flex; align-items:center; gap:8px;
-  transition:transform .22s, box-shadow .22s;
-}
+
 
 
 .sec-label {
@@ -450,8 +193,8 @@ animation: pan-grad 5s ease infinite;
             Using Figma, Storybook, Tailwind CSS, and modern design frameworks.
           </p>
           <div style={{ display:"flex", flexWrap:"wrap", gap:12, }}>
-            <a href="#quote" className=" py-3.5 px-7 rounded-[10px] bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-12 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">✦ Get a Free Quote</a>
-            <a href="#work" className="py-3.5 px-7 rounded-[10px]">View Our Work →</a>
+            <a href="#quote" className="bg-gradient-to-br from-amber-500 btn-amber to-amber-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:-translate-y-1 transition">✦ Get a Free Quote</a>
+            <a href="#work" className="py-4 px-7 rounded-[10px]">View Our Work →</a>
           </div>
           <div style={{ marginTop:36, display:"flex", flexWrap:"wrap", gap:28, opacity:0, animation:"fadeIn .6s 1.3s forwards" }}>
             {[["200+","Projects"],["98%","Satisfaction"],["50+","Brands"]].map(([n,l])=>(
@@ -733,13 +476,7 @@ const ContactCards = () => {
             </p>
           </div>
           <div style={{ display:"flex", gap:12, flexWrap:"wrap", position:"relative" }}>
-            <a href="#quote" style={{
-              padding:"14px 28px", borderRadius:10, background:"#fff", color:"var(--blue)",
-              fontWeight:700, textDecoration:"none", fontSize:".9rem", display:"inline-block",
-              transition:"transform .2s, box-shadow .2s",
-            }}
-              onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-2px)";e.currentTarget.style.boxShadow="0 8px 20px rgba(0,0,0,.18)";}}
-              onMouseLeave={e=>{e.currentTarget.style.transform="translateY(0)";e.currentTarget.style.boxShadow="none";}}
+            <a href="#quote"  className="btn-amber"
             >✦ Get a Free Quote</a>
             <a href="tel:+919766650411" style={{
               padding:"14px 28px", borderRadius:10,

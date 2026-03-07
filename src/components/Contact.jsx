@@ -114,7 +114,7 @@ ${formData.details || "N/A"}
     <section id="contact" className="py-24 px-[5%] bg-stone-50 relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
         {/* Left info */}
-        <div className="reveal">
+        <div className="">
           <STag color="gold">Get In Touch</STag>
           <h2 className="font-display font-black text-4xl md:text-5xl tracking-tight leading-tight mb-4">
             Let's Scope<br />
@@ -153,7 +153,7 @@ ${formData.details || "N/A"}
         </div>
 
         {/* Right form */}
-        <div className="reveal relative bg-white border border-slate-200 rounded-3xl p-8 shadow-lg overflow-hidden">
+        <div className=" relative bg-white border border-slate-200 rounded-3xl p-8 shadow-lg overflow-hidden">
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent opacity-60" />
           <div className="font-display font-bold text-slate-800 text-xl mb-6">Tell Us About Your Project</div>
 

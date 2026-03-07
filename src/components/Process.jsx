@@ -1,5 +1,4 @@
 import STag from "./ui/STag";
-
 const STEPS = [
   { n: "01", icon: "🔍", title: "Discovery",          desc: "Free consultation, requirement scoping, tech stack recommendation, honest timeline." },
   { n: "02", icon: "🎨", title: "Design & Prototype", desc: "Wireframes, user flows, high-fidelity UI — approved before any code is written." },
@@ -12,7 +11,7 @@ export default function Process() {
   return (
     <section id="process" className="py-24 px-[5%] bg-white relative z-10">
       {/* Header */}
-      <div className="mb-14 reveal">
+      <div className="mb-14 ">
         <STag color="teal">Our Process</STag>
         <h2 className="font-display font-black text-4xl md:text-5xl tracking-tight leading-tight">
           Idea to Live —<br />
@@ -24,7 +23,7 @@ export default function Process() {
       </div>
 
       {/* Steps */}
-      <div className="relative grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 reveal">
+      <div className="relative grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 ">
         {/* Connector line (desktop only) */}
         <div className="hidden lg:block absolute top-6 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
 

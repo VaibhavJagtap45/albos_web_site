@@ -241,7 +241,7 @@ export default function TelecallingAndSupportServices() {
         <div style={{ position:"absolute", top:-100, right:-60, width:480, height:480, borderRadius:"50%", background:"radial-gradient(circle,rgba(59,130,246,0.12),transparent 70%)", pointerEvents:"none" }} />
         <div style={{ position:"absolute", bottom:-70, left:-50, width:360, height:360, borderRadius:"50%", background:"radial-gradient(circle,rgba(16,185,129,0.08),transparent 70%)", pointerEvents:"none" }} />
 
-        <div style={{ maxWidth:1480, margin:"0 auto", padding:"0 32px", display:"flex", flexWrap:"wrap", alignItems:"center", gap:52, justifyContent:"space-between" }}>
+        <div style={{ maxWidth:1450, margin:"0 auto", padding:"0 32px", display:"flex", flexWrap:"wrap", alignItems:"center", gap:52, justifyContent:"space-between" }}>
           <div style={{ flex:"1 1 280px", maxWidth:680 }}>
             <Reveal>
               <div style={{ display:"inline-flex", alignItems:"center", gap:7, background:"rgba(37,99,235,0.08)", border:"1px solid rgba(37,99,235,0.2)", borderRadius:40, padding:"5px 15px", marginBottom:22 }}>

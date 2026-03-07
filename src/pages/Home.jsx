@@ -6,7 +6,6 @@ import Portfolio     from "../components/Portfolio";
 import WhyUs        from "../components/Whyus";
 import TechMarquee  from "../components/Techmarquee";
 import Testimonials from "../components/Testimonials";
-// import Team         from "../components/Team";
 import Contact      from "../components/Contact";
 
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
       <WhyUs />
       <TechMarquee />
       <Testimonials />
-      {/* <Team /> */}
       <Contact />
     </>
   );

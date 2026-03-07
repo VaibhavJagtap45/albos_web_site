@@ -4,8 +4,6 @@ import Tag from "../components/ui/Tag";
 import Services from "../components/Services";
 import Process from "../components/Process";
 import TechMarquee from "../components/Techmarquee";
-// import WebDevelopment from "../components/services/WebDevelopement";
-// import AppDevelopment from "../components/services/AppDevelopement";
 
 function ServicesHero() {
   return (
